@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>使用Konva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script src="https://unpkg.com/konva@2.4.2/konva.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../layer/layer.js"></script>
+    <style>
+        #demo {
+            width: 100%;
+            height: 90vh;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .header {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        .guanka {
+            line-height: 0.3;
+            padding: 4px;
+            border-radius: 50%;
+            border: 1px gray solid;
+            display: inline-block;
+            font-family: fantasy;
+            vertical-align: middle;
+        }
+
+        .tip {
+            height: 3rem;
+            line-height: 3rem;
+            text-align: center;
+            position: absolute;
+            top: 12vh;
+            background: white;
+            border-radius: 8px;
+            z-index: 99;
+            opacity: .8;
+            width: 150px;
+            left: 50%;
+            transform: translateX(-75px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <audio style="display:none" autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="./audio.mp3">
+        你的浏览器版本太低，不支持audio标签
+    </audio>
+    <div class='header'>
+        <span>待选择的球: <span class="remain"></span></span>
+        <span>关卡: <span class="guanka">&nbsp;</span><span class="guanka">&nbsp;</span><span class="guanka">&nbsp;</span><span
+                class="guanka">&nbsp;</span><span class="guanka">&nbsp;</span></span>
+    </div>
+    <div class='tip'>
+        关注这些球
+    </div>
+    <div id="demo"></div>
+</body>
+<script>
+    var containerW = $('#demo').width();
+    var containerH = $('#demo').height();
+    var balls1 = [];
+    var balls2 = [];
+    var guankanum = 0;
+    var remain = 0;
+    var num1 = 1, num2 = 1
+    var frame;
+
+    //随机数函数
+    function random(min, max) {
+        return parseInt(Math.random() * (max - min) + min);
+    }
+
+    var images = [];
+    for (let i = 0; i < 10; i++) {
+        var image = new Image();
+        image.src = './' + i + '.png';
+        images.push(image)
+    }
+    var image = new Image();
+    image.src = './right.jpg';
+    images['right'] = image;
+    var image = new Image();
+    image.src = './wrong.jpg';
+    images['wrong'] = image;
+    function Ball(option) {
+        this._init(option);
+    }
+    Ball.prototype = {
+        _init: function (option) {
+            this.x = option.x || random(1, 3); //圆形组的中心点坐标
+            this.y = option.y || random(1, 3);
+            this.speedX = option.speedX || 2;//如果有指定speedx坐标就使用，没有就随机
+            this.speedY = option.speedY || 2;//如果有指定speedy坐标就使用，没有就随机
+            this.radius = option.radius || 0; //内圆半径
+            this.text = option.text || 'canvas';        //圆内的文字
+            this.innerStyle = option.innerStyle || 'red'; //内圆的填充样式
+            this.overSet = new Set();
+
+            //初始化一个内部圆
+            this.circle = new Konva.Circle({ //创建一个圆
+                x: this.x,
+                y: this.y,
+                radius: this.radius, //圆的半径
+                fillPatternImage: images[random(0, 10)],
+                fillPatternOffset: { x: 0, y: 0 },
+                stroke: 'lightgray',
+                strokeWidth: 0.2,
+                shadowColor: 'gray',
+                shadowBlur: 10,
+                shadowOffset: { x: 5, y: 5 },
+                shadowOpacity: 0.5
+            });
+
+            option.balls.push(this);
+        },
+        //把 组添加到层或者其他组中。
+        addToGroupLayer: function (arg) {
+            arg.add(this.circle);
+            // let tween1 = new Konva.Tween({
+            //     node: this.group, //要进行动画的Konva对象
+            //     opacity: 1,
+            //     duration: 0.1, //持续时间 
+            //     easing: Konva.Easings.EaseIn, //动画的动画效果
+            //     yoyo: false, //是否进行循环播放的设置 
+            //     onFinish: function () { //动画执行结束后，执行此方法 
+
+            //     }
+            // });
+            // tween1.play(); //启动动画
+        },
+        move: function () {
+            if (this.x < this.radius || this.x > containerW - this.radius) {
+                this.speedX = -this.speedX;
+            }
+            if (this.y < this.radius || this.y > containerH - this.radius) {
+                this.speedY = -this.speedY;
+            }
+            for (var ball of balls1.concat(balls2)) {
+                if (this === ball) {
+                    continue;
+                } else {
+                    var x = this.x - ball.x;//两个圆中心的x坐标相减.
+                    var y = this.y - ball.y;//两个圆中心的y坐标相减.
+
+                    //          console.log("碰撞打印函数-------",x,y);
+
+                    var distance = x * x + y * y;//开方函数
+                    //          console.log("{----------",distance,obj1.r + obj2.r)
+                    if (distance <= Math.pow((this.radius + ball.radius), 2)) {//判断碰撞
+                        if (this.overSet.has(ball)) {
+                            ball.speedX = -this.speedX;
+                            ball.speedY = -this.speedY;
+                            continue;
+                        }
+                        this.speedX = -this.speedX;
+                        this.speedY = -this.speedY;
+                        this.overSet.add(ball);
+                    } else {
+                        this.overSet.delete(ball);
+                    }
+                }
+
+            }
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.circle.setX(this.x);
+            this.circle.setY(this.y);
+            // this.circle.draw();
+            // if (this.group.getOpacity() < 1) {
+            //     this.group.setOpacity(this.group.getOpacity() + 0.05)
+            // }
+        }
+
+    }
+
+    var stage = new Konva.Stage({
+        container: 'demo',
+        width: containerW,
+        height: containerH
+    })
+
+
+    var layer1 = new Konva.Layer({}); //创建第1个层 
+    stage.add(layer1);
+    var layer2 = new Konva.Layer({}); //创建第二个层 
+    stage.add(layer2);
+
+
+    var bgimg = new Image();
+    bgimg.src = './bg.jpg';
+    bgimg.onload = function () {
+        var bg = new Konva.Image({
+            x: 0,
+            y: 0,
+            image: bgimg,
+            width: containerW,
+            height: containerH
+        });
+        layer1.add(bg);
+        layer1.draw();
+    }
+
+
+
+
+
+    function createBall(option, layer) {
+        var x = random(option.radius, containerW - option.radius);
+        var y = random(option.radius, containerH - option.radius);
+        for (var ball of balls1) {
+            do {
+                x = random(option.radius, containerW - option.radius);
+                y = random(option.radius, containerH - option.radius);
+                var diffx = x - ball.x;//两个圆中心的x坐标相减.
+                var diffy = y - ball.y;//两个圆中心的y坐标相减.
+                var distance = diffx ** 2 + diffy ** 2;//开方函数
+
+            } while (distance <= Math.pow((option.radius + ball.radius), 2));
+        }
+        var ball = new Ball({
+            x: x,
+            y: y,
+            radius: option.radius,
+            balls: option.balls
+        })
+        ball.addToGroupLayer(layer);
+        return ball;
+    }
+
+    function createBalls1(num) {
+        for (var i = 0; i < num; i++) {
+            createBall({
+                radius: random(27, 33),
+                balls: balls1
+            }, layer2)
+        }
+        remain = balls1.length;
+        $('.remain').text(remain)
+        layer2.draw();
+    }
+
+    function createBalls2(num) {
+        var delay = function (r, s) {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    resolve([r, s]);
+                }, s);
+            });
+        };
+
+        delay('a', 5000).then(function (v) {
+            for (var i = 0; i < num; i++) {
+                createBall({
+                    radius: random(27, 33),
+                    balls: balls2
+                }, layer2)
+            }
+            $('.tip').fadeOut();
+            return delay('b', 3000);
+        }).then(function (v) {
+            window.cancelAnimationFrame(frame);
+            // animate.stop();
+            // clearInterval(frame);
+            $('.tip').text('选择先出现的球');
+            $('.tip').fadeIn();
+            for (var ball of balls1) {
+                ball.circle.setFillPatternImage('');
+                ball.circle.setFill('white');
+                ball.circle.on('tap', function () {
+                    this.setFill('');
+                    this.setFillPatternImage(images['right']);
+                    this.setFillPatternOffset({ x: -24, y: -24 });
+                    this.draw();
+                    remain--;
+                    $('.remain').text(remain);
+                    if (remain == 0) {
+                        $('.guanka').eq(guankanum - 1).css('background', 'forestgreen');
+                        num1++;
+                        num2 += .5;
+                        guanka(num1, num2);
+                    }
+                });
+
+            }
+            for (var ball of balls2) {
+                ball.circle.setFillPatternImage('');
+                ball.circle.setFill('white');
+                ball.circle.on('tap', function () {
+                    this.setFill('');
+                    this.setFillPatternImage(images['wrong']);
+                    this.setFillPatternOffset({ x: -24, y: -24 });
+                    this.draw();
+                    $('.guanka').eq(guankanum - 1).css('background', 'red');
+                    layer.msg('X');
+                    num1++;
+                    num2 += .5;
+                    guanka(num1, num2);
+
+                });
+            }
+            return delay('b', 1800);
+        }).then(function (v) {
+            $('.tip').fadeOut();
+        })
+    }
+
+    function guanka(num1, num2) {
+        balls1 = [];
+        balls2 = [];
+        if (guankanum >= 5) {
+            layer.open({
+                type: 1,
+                title: false,
+                content: '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;"><h1>游戏结束</h1></div>',
+                closeBtn: 0,
+                shadeClose: false
+                , btn: ['再来一次', '回到菜单',]
+                , yes: function (index, layero) {
+                    //按钮【再来一次】的回调
+                    layer2.removeChildren();
+                    guankanum = 0;
+                    $('.guanka').css('background', 'white');
+                    guanka(1, 1);
+                    layer.close(index);
+                }
+                , btn2: function (index, layero) {
+                    //按钮【回到菜单】的回调
+                    window.location.href = '../index.html';
+                }
+
+            });
+        }
+        layer2.removeChildren();
+        guankanum++;
+        var frameNum = 0;
+        createBalls1(num1);
+        createBalls2(num2);
+        function gameloop() {
+            frameNum++;
+            for (var ball of balls1.concat(balls2)) {
+                setTimeout(ball.move(), 0);
+            }
+            frame = window.requestAnimationFrame(gameloop);//跟setTimeout相似，根据帧率执行
+        }
+        gameloop()
+        // frame = setInterval(gameloop,16)
+
+
+
+    }
+
+    guanka(num1, num2)
+
+    var animate = new Konva.Animation(
+        function (frame) {
+            //每隔一会执行此方法，类似 setInterval
+            for (var ball of balls1) {
+                ball.circle.rotate(2);
+            }
+            for (var ball of balls2) {
+                ball.circle.rotate(2);
+            }
+
+        }, layer2);
+    animate.start();//启动动画
+
+
+
+</script>
+
+</html>

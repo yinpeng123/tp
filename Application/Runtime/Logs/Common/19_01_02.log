@@ -1,0 +1,24 @@
+[ 2019-01-02T13:25:18+08:00 ] 192.168.6.167 /index.php/challenge/index.html?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Challenge
+
+[ 2019-01-02T13:25:26+08:00 ] 192.168.6.167 /index.php/challenge/index.html?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+ERR: 无法加载模块:Challenge
+
+[ 2019-01-02T13:29:23+08:00 ] 192.168.6.167 /index.php/challenge/index.html?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+ERR: 无法加载模块:Challenge
+
+[ 2019-01-02T13:29:26+08:00 ] 192.168.6.167 /index.php/challenge/index.html?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Challenge
+

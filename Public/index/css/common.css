@@ -1,0 +1,19 @@
+.weui-panel__hd {
+    font-family: fantasy;
+}
+
+.weui-navbar__item:after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    bottom: 0;
+    border: none;
+
+}
+
+.weui-navbar__item.weui-bar__item--on {
+    background-color: unset;
+    border-bottom: 3px forestgreen solid;
+}

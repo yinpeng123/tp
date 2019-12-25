@@ -1,0 +1,24 @@
+[ 2019-09-23T08:13:27+08:00 ] 157.55.39.25 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-09-23T08:16:22+08:00 ] 40.77.167.210 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-09-23T23:39:19+08:00 ] 139.9.232.149 /index.php/module/aciton/param1/${@phpinfo()}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+ERR: 无法加载模块:Module
+
+[ 2019-09-23T23:39:39+08:00 ] 139.9.232.125 /index.php/module/aciton/param1/${@phpinfo()}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+ERR: 无法加载模块:Module
+

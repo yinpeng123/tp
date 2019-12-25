@@ -1,0 +1,1120 @@
+[ 2018-12-30T15:36:08+08:00 ] 192.168.6.167 /index.php/Admin/Topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `topic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001850s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001870s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2018-12-30T15:36:10+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: order D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  LIMIT 1   [ RunTime:0.0068s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 45 行.
+SQL: SELECT r.id,r.create_time,r.status,r.type,r.status,r.failcause,us.nickname FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  ORDER BY r.id desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/complain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `complain` ORDER BY complain_time desc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-20/5c1b1590b71ad.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e3043.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c0cd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+ERR: 非法操作:111
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c423.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2018-12-18%2017:27:23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+ERR: 非法操作:2018-12-18 17:27:23
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83ecae.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+ERR: 非法操作:222
+
+[ 2018-12-30T15:36:11+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+ERR: 非法操作:2
+
+[ 2018-12-30T15:36:12+08:00 ] 192.168.6.167 /index.php/Admin/Topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `topic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-12-30T15:36:12+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d9096c65.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2018-12-30T15:36:12+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d865835d.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2018-12-30T15:36:12+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0b3c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2018-12-30T15:36:12+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0e63.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-12-30T15:36:12+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a0bf7d2ffb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/complain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `complain` ORDER BY complain_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-20/5c1b1590b71ad.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d9096c65.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a0bf7d2ffb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0b3c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0e63.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83ecae.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e3043.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c0cd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c423.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+ERR: 非法操作:111
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2018-12-18%2017:27:23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+ERR: 非法操作:2018-12-18 17:27:23
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+ERR: 非法操作:222
+
+[ 2018-12-30T15:36:13+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: order D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 45 行.
+SQL: SELECT r.id,r.create_time,r.status,r.type,r.status,r.failcause,us.nickname FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  ORDER BY r.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/complain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `complain` ORDER BY complain_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a0bf7d2ffb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-20/5c1b1590b71ad.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0b3c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d865835d.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0e63.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83ecae.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c423.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e3043.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+ERR: 非法操作:111
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2018-12-18%2017:27:23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+ERR: 非法操作:2018-12-18 17:27:23
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+ERR: 非法操作:222
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+ERR: 非法操作:2
+
+[ 2018-12-30T15:36:14+08:00 ] 192.168.6.167 /index.php/Admin/Topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `topic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+ERR: 非法操作:2
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/complain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `complain` ORDER BY complain_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-20/5c1b1590b71ad.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0b3c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d865835d.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d9096c65.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c423.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c0cd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e3043.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83ecae.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+ERR: 非法操作:2
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+ERR: 非法操作:222
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+ERR: 非法操作:111
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2018-12-18%2017:27:23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+ERR: 非法操作:2018-12-18 17:27:23
+
+[ 2018-12-30T15:36:15+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: order D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 45 行.
+SQL: SELECT r.id,r.create_time,r.status,r.type,r.status,r.failcause,us.nickname FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  ORDER BY r.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/complain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `complain` ORDER BY complain_time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-20/5c1b1590b71ad.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d865835d.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a0bf7d2ffb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0b3c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0e63.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c0cd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c423.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e3043.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83ecae.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+ERR: 非法操作:111
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 非法操作:222
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2018-12-18%2017:27:23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+ERR: 非法操作:2018-12-18 17:27:23
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0e63.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+
+[ 2018-12-30T15:36:16+08:00 ] 192.168.6.167 /index.php/Admin/Topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `topic` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/complain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `complain` ORDER BY complain_time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-20/5c1b1590b71ad.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d9096c65.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a0bf7d2ffb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d865835d.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0e63.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c0cd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e3043.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c423.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83ecae.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+ERR: 非法操作:2
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+ERR: 非法操作:111
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+ERR: 非法操作:222
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2018-12-18%2017:27:23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+ERR: 非法操作:2018-12-18 17:27:23
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+ERR: 非法操作:2
+
+[ 2018-12-30T15:36:17+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: order D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 45 行.
+SQL: SELECT r.id,r.create_time,r.status,r.type,r.status,r.failcause,us.nickname FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  ORDER BY r.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0b3c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `topic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/complain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `complain` ORDER BY complain_time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-20/5c1b1590b71ad.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d9096c65.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0e63.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a0bf7d2ffb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d865835d.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e3043.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c0cd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2018-12-18%2017:27:23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+ERR: 非法操作:2018-12-18 17:27:23
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+ERR: 非法操作:222
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+ERR: 非法操作:111
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c423.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83ecae.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+
+[ 2018-12-30T15:36:18+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+ERR: 非法操作:2
+
+[ 2018-12-30T15:36:19+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: order D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where D:\tp3.2\Application\Admin\Controller\ChallengeController.class.php 第 45 行.
+SQL: SELECT r.id,r.create_time,r.status,r.type,r.status,r.failcause,us.nickname FROM room r left join room_user as ru on r.id = ru.room_id left join user as us on ru.openid = us.openid  ORDER BY r.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-12-30T15:36:19+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0b3c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/complain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `complain` ORDER BY complain_time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-20/5c1b1590b71ad.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d865835d.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0b3c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a4d9096c65.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c1a0bf7d2ffb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e0e63.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fd08e3043.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c0cd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83c423.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/public/Uploads/2018-12-19/5c19fcb83ecae.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+ERR: 非法操作:111
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2018-12-18%2017:27:23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+ERR: 非法操作:2018-12-18 17:27:23
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+ERR: 非法操作:222
+
+[ 2018-12-30T15:36:20+08:00 ] 192.168.6.167 /index.php/Admin/Topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `topic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-12-30T15:36:21+08:00 ] 192.168.6.167 /index.php/Admin/Challenge/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+ERR: 非法操作:2
+

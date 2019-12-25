@@ -1,0 +1,12 @@
+[ 2019-03-29T07:21:50+08:00 ] 47.103.46.46 /index.php/explicit_not_exist_path
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+ERR: 无法加载模块:Explicit_not_exist_path
+
+[ 2019-03-29T07:21:50+08:00 ] 47.103.44.239 /index.php/explicit_not_exist_path
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+ERR: 无法加载模块:Explicit_not_exist_path
+

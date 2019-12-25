@@ -1,0 +1,234 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f7f7f7;
+}
+#header{
+	height: 2.5rem;
+	background: #473486;
+}
+#content{
+	height: 15rem;
+	background: #5b40a9;
+}
+.nav_con{
+	width: 16rem;
+	height: 1.3rem;
+	margin: auto;
+	border: 1px solid  white;
+	border-radius:0.1rem;
+}
+.nav{
+	float: left;
+	width: 5.5rem;
+	height: 1.3rem;
+	color: white;
+	text-align: center;
+	line-height: 1.3rem;
+	background: #5b40a9;
+	font-size: 0.53rem;
+	border-left: 0.01rem solid white;
+}
+.nav.active{
+	background: white;
+	color: #575560;
+}
+.clearfix:after { content: ""; display: block; height: 0; clear: both; } 
+.clearfix { zoom: 1; }
+.slogan_con{
+	width: 16rem;
+	height: 2.5rem;
+	margin: auto;
+	font-size: 0.57rem;
+	color: #9b93a2;
+}
+.slogan_left{
+	margin-top: 0.7rem;
+	float: left;
+}
+.slogan_right{
+	margin-top: 0.9rem;
+	float: right;
+}
+.font_blod{
+	font-weight: 900;
+}
+.tag_con{
+	width: 16rem;
+	height: 12rem;
+	margin:auto;
+}
+.tag{
+	width: 16rem;
+	height: 2.4rem;
+	margin-bottom: 0.4rem;
+	border-radius: 0.1rem;
+	background: white;
+	font-size: 0.4rem;
+}
+.tagone{
+	float: left;
+	margin:0.8rem 0 0 0.8rem;
+	font-size: 0.4rem;
+}
+.tagtwo{
+	float: right;
+	margin-top:0.53rem ;
+	margin-right: 1.2rem;
+	color: #b8b8b8;
+}
+.tagthree{
+	float: right;
+	margin-top:0.4rem;
+	margin-right: 1.5rem;
+	color: #5c44a2;
+	font-size: 1.2rem;
+}
+#article{
+	background: #f7f7f7;
+	padding-bottom: 3.3rem;
+}
+.report{
+	width: 95%;
+    height: 14rem;
+    background: white;
+    margin: 0.3rem auto;
+    border-radius: .2rem;
+}
+.bmi{
+	width: 95%;
+    height: 13rem;
+    margin: 0.3rem auto 0;
+    background: white;
+    border-radius: .2rem;
+}
+.bmi_nav{
+	height: 2.3rem;
+}
+.bmi_nav_icon{
+	margin-top: 0.6rem;
+	margin-left: 0.53rem;
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../images/bim.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.bmi_nav_text{
+	margin-top: 0.6rem;
+	margin-left: 0.3rem;
+	float: left;
+	color: #a9a9a9;
+	font-size: 0.53rem;
+}
+.bmi_img{
+	width: 16rem;
+	height: 10rem;
+	margin: auto;
+}
+.fernand_nav_icon{
+	margin-top: 0.6rem;
+	margin-left: 0.53rem;
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../images/fernand.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.fernand_right{
+	float: right;
+	height: 0.53rem;
+	margin: 0.8rem 1.5rem 0 0;
+	font-size: 0.6rem;
+	color:#858585;
+	font-weight: 900;
+}
+.fernand_img{
+	width: 16rem;
+	height: 4rem;
+	margin: auto;
+	background: url(../images/fernand_img.png);
+}
+.mood_nav_icon{
+	margin-top: 0.6rem;
+	margin-left: 0.5rem;
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../images/mod.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.mental_nav_icon{
+	margin-top: 0.6rem;
+	margin-left: 0.5rem;
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../images/mental.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.mood_img, .health_img, .mental_img{
+	width: 16rem;
+    height: 10rem;
+	margin: auto;
+}
+
+.report_one{
+	width: 100%;
+    height: 14rem;
+    margin: 0 auto 0;
+    background: url(../images/body.png) no-repeat center;
+	background-size: 28% 90%;
+}
+.report_header{
+	height: 1.13rem;
+}
+.report_icon{
+	float: left;
+	width: 0.8rem;
+	height: 0.58rem;
+	margin-top: 1.2rem;
+	margin-left: 0.6rem;
+	background: url(../images/report.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.report_text{
+	float: left;
+	font-size: 0.4rem;
+	margin-top: 1.2rem;
+	margin-left: 0.3rem;
+}
+.report_arile_left{
+	margin-top: 6rem;
+    margin-left: -2.2rem;
+    float: left;
+    font-size: 0.5rem;
+}
+.report_arile_left>span{
+	color: #2e7f9c;
+	font-size: 1.2rem;
+}
+.report_arile_right{
+    float: right;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+}
+.report_arile_text{
+	vertical-align: middle;
+	float: right;
+	margin-top: 0.2rem;
+	margin-left: 0.7rem;
+	font-size: 0.4rem;
+}
+.report_arile_img{
+	vertical-align: middle;
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+}
+.report_arile_con{
+	margin-top: 1.3rem;
+}
+

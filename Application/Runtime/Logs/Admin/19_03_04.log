@@ -1,0 +1,27 @@
+[ 2019-03-04T15:49:59+08:00 ] 118.31.119.8 /index.php/?s=admin/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+ERR: 无法加载控制器:\think\app
+
+[ 2019-03-04T15:50:57+08:00 ] 47.97.44.200 /index.php/?s=admin/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+ERR: 无法加载控制器:\think\app
+
+[ 2019-03-04T15:56:17+08:00 ] 121.43.34.65 /index.php/?s=admin/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+ERR: 无法加载控制器:\think\app
+

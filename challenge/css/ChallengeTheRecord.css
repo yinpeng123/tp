@@ -1,0 +1,155 @@
+*{
+	box-sizing: border-box;
+}
+#header{
+	background: #1B2434;
+}
+.header_nav{
+	overflow: hidden;
+	height: 1.973333rem;
+}
+.header_arrow{
+	width: 0.346666rem;
+	height: 0.64rem;
+	margin: 0.64rem 0 0 0.933333rem;
+	background: url(../images/MyChallenge/arr.png) no-repeat center;
+	background-size:100% 100%;
+}
+.header_title{
+	height: 2.64rem;
+	font-size: 0.64rem;
+	color: white;
+	text-align: center;
+	line-height: 2.64rem;
+}
+#main{
+	padding-top: 0.466666rem;
+	position: relative;
+	background:#F7F7F7;
+	padding-bottom: 1.546666rem;
+	min-height:0.013333rem;
+}
+.main{
+	overflow: hidden;
+	width: 9.413333rem;
+	height:4.613333rem;
+	margin:auto;
+	background: white;
+	padding-top: 0.32rem;
+	box-sizing: content-box;
+}
+.main_header_con{
+	width: 7rem;
+	display: flex;
+	justify-content: space-between;
+	height: 1.333333rem;
+	margin:0.453333rem 0 0 0.453333rem;
+	box-sizing: border-box;
+}
+.main_header{
+	font-size: 0.266666rem;
+	color: #999;
+}
+.font{
+	font-size: 0.466666rem;
+	color: #288597;
+}
+.headline{
+	margin:0 0 0 0.453333rem;
+	height:0.64rem;
+	vertical-align: middle;
+}
+.headline_tit{
+	float: left;
+	height:0.64rem;
+	line-height: 0.64rem;
+	font-size: 0.266666rem;
+	color: #999;
+}
+.exit{
+	float: left;
+	width: 1.6rem;
+	height: 0.533333rem;
+	margin-left: 0.453333rem;
+	border-radius: 0.253333rem;
+	background: #ccc;
+	font-size: 0.266666rem;
+	line-height: 0.533333rem;
+	text-align: center;
+	color: white;
+}
+.member{
+	height: 1.813333rem;
+}
+.member>div{
+	width: 8.133333rem;
+	margin: auto;
+}
+.member_infor{
+	float: left;
+}
+.le_two{
+	margin-left: 1.5rem;
+}
+.member_portrait{
+	display: flex;
+	justify-content:center;
+	height: 1.413333rem;
+}
+.member_portrait>img{
+	display: block;
+	width: 1.413333rem;
+	height: 1.413333rem;
+}
+.member_name{
+	text-align: center;
+	margin-top: 0.213333rem;
+	font-size: 0.266666rem;
+}
+.state{
+	position: absolute;
+	right: 0.533333rem;
+	width: 0.773333rem;
+	height: 1.626666rem;
+}
+#pop-up{
+	display: none;
+	z-index: 99;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	padding: 0.266666rem;
+	margin-left: -3.1rem;
+	margin-top: -1.9rem;
+	width: 6.293333rem;
+	height: 3.893333rem;
+	background: #F7F7F7;
+	box-sizing: border-box;
+}
+#pop-up>p:nth-child(1){
+	font-size:0.586666rem;
+	color: #db1361;
+}
+#pop-up>p:nth-child(2){
+	font-size:0.293333rem;
+	color: black;
+}
+.btn{
+	width: 0.8rem;
+	height: 0.6rem;
+}
+.doing{
+	background: url(../images/MyChallenge/doing.svg);
+}
+.success{
+	background: url(../images/MyChallenge/sucess.svg);
+}
+.defeated{
+	background: url(../images/MyChallenge/defeated.svg);
+}
+.teamof{
+	background: url(../images/MyChallenge/teamof.svg);
+}
+.none{
+	display: none;
+}

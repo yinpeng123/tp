@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://hw.weixin.qq.com/devicectrl/panel/lamp.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>demo</title>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="__PUBLIC__/index/css/voice.css">
+    <script src="https://cdn.bootcss.com/vConsole/3.0.0/vconsole.min.js"></script>
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js "></script>
+</head>
+
+<body>
+    <div>
+        <div class="messages">
+
+
+        </div>
+
+        <audio controls autoplay></audio>
+        <div class="contrs">
+            <input type="button" value="开始录音" onclick="startRecording()" />
+            <input type="button" value="获取录音" onclick="obtainRecord()" />
+            <input type="button" value="发送" onclick="send()" />
+            <!-- <input type="button" value="播放录音" onclick="playRecord()"/>   -->
+        </div>
+        <div class="error">
+
+        </div>
+    </div>
+    <script>
+        let vConsole = new VConsole();
+    </script>
+    <script src="__PUBLIC__/index/js/jquery-3.2.1.min.js"></script>
+    <script src="__PUBLIC__/index/js/recoder.js"></script>
+    <script>
+        $.ajax({
+            type: 'post',
+            dataType: 'json',
+            url: 'https://record.mensan.xyz/sign.php',
+            success: function (res) {
+                console.log(res)
+                console.log('ssss', location.href.split('#')[0])
+                wx.config({
+                    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    appId: res.appId, // 必填，公众号的唯一标识
+                    timestamp: res.timestamp, // 必填，生成签名的时间戳
+                    nonceStr: res.noncestr, // 必填，生成签名的随机串
+                    signature: res.signature,// 必填，签名
+                    jsApiList: ['startRecord', 'stopRecord', 'playVoice','uploadVoice'] // 必填，需要使用的JS接口列表
+                });
+            }
+        })
+
+
+        function startRecording() {
+            wx.startRecord();
+        }
+        function obtainRecord() {
+
+        }
+        function send() {
+            wx.stopRecord({
+                success: function (res) {
+                    var localid = res.localId;
+                    wx.playVoice({
+                        localId: localid // 需要播放的音频的本地ID，由stopRecord接口获得
+                    });
+                  console.log(1);
+                    wx.uploadVoice({
+                        localId: localid, // 需要上传的音频的本地ID，由stopRecord接口获得
+                        isShowProgressTips: 1, // 默认为1，显示进度提示
+                        success: function (res) {
+                            var serverId = res.serverId; // 返回音频的服务器端ID
+                          console.log(2);  
+                          $.ajax({
+                                url: 'https://record.mensan.xyz/download.php',
+                                type: 'post',
+                                data: { 'id': serverId },
+                                success: function (res) {
+                                    console.log(res);
+                                }
+                            })
+                        }
+                    })
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>

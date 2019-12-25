@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>方块选择</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../layer/layer.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        .guanka {
+            line-height: 0.3;
+            padding: 4px;
+            border-radius: 50%;
+            border: 1px gray solid;
+            display: inline-block;
+            font-family: fantasy;
+            vertical-align: middle;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            min-height: 90vh;
+            background: bisque;
+        }
+
+        .plane {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+
+        .fangkuai {
+            width: 10vw;
+            height: 10vw;
+            background: white;
+            margin: 1vw;
+            box-shadow: 2px 2px 2px lightgray;
+            display: none;
+            animation: myfirst 1s;
+            -webkit-animation: myfirst 1s;
+            /* Safari 与 Chrome */
+        }
+
+        @keyframes myfirst
+
+        /* Safari 与 Chrome */
+            {
+            from {
+                transform: scale(.5, .5);
+            }
+
+            to {
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes mysecond
+
+        /* Safari 与 Chrome */
+            {
+            20% {
+                background: forestgreen;
+                transform: scale(.5, .5);
+            }
+
+            80% {
+                background: forestgreen;
+                transform: scale(1, 1);
+            }
+
+            90% {
+                background: white;
+                transform: scale(.5, .5);
+            }
+
+            100% {
+                background: white;
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes mythird
+
+        /* Safari 与 Chrome */
+            {
+            50% {
+                background: white;
+            }
+
+            60% {
+                background: forestgreen;
+            }
+
+            100% {
+                background: forestgreen;
+                transform: rotateY(180deg);
+            }
+        }
+
+        @keyframes myfourth
+
+        /* Safari 与 Chrome */
+            {
+            50% {
+                background: white;
+            }
+
+            60% {
+                background: black;
+            }
+
+            100% {
+                background: black;
+                transform: rotateY(180deg);
+            }
+        }
+    </style>
+    <div class='header'>
+        <span>待选择的方块: <span class="remain">0</span></span>
+        <span>关卡:
+            <span class="guanka">&nbsp;</span>
+            <span class="guanka">&nbsp;</span>
+            <span class="guanka">&nbsp;</span>
+            <span class="guanka">&nbsp;</span>
+            <span class="guanka">&nbsp;</span>
+            <span class="guanka">&nbsp;</span>
+        </span>
+    </div>
+    <div class="content">
+        <div class="plane"></div>
+    </div>
+    <script>
+        var guankanum = 0;
+        function addFangkuai(num, ms) {
+            $('.plane').empty();
+            for (let i = 0; i < num; i++) {
+                let fangkuai = $('<div class="fangkuai"></div>');
+                $('.plane').append(fangkuai);
+                fangkuai.fadeIn();
+            }
+            return new Promise((resolve, rejext) => {
+                setTimeout(function () { resolve(num) }, ms)
+            })
+        }
+
+        function guanka(num) {
+            addFangkuai(num, 1200).then(function (num) {
+                var blueset = new Set();
+                for (; ;) {
+                    let i = parseInt(Math.random() * num);
+                    blueset.add(i);
+                    $('.fangkuai').eq(i).css('animation', 'mysecond 2.5s');
+                    $('.remain').text(blueset.size);
+                    if (blueset.size >= Math.floor(num / 3)) {
+                        break;
+                    }
+                }
+
+                return new Promise((resolve, rejext) => {
+                    setTimeout(function () { resolve({ 'num': num, 'blueset': blueset }) }, 2500);
+                })
+            }).then(function (value) {
+                for (let i = 0; i < value.num; i++) {
+                    $('.fangkuai').eq(i).unbind();
+                    $('.fangkuai').eq(i).click(function () {
+                        if (value.blueset.has(i)) {
+                            $(this).css('animation', 'mythird .5s linear forwards');
+                            value.blueset.delete(i);
+                            $('.remain').text(value.blueset.size);
+                            if (!value.blueset.size) {
+                                $('.guanka').eq(guankanum).css('background', 'forestgreen');
+
+                                setTimeout(function () {
+                                    nextguanka(value.num);
+                                }, 1000);
+
+                            }
+                        } else {
+                            $(this).css('animation', 'myfourth .5s linear forwards');
+                            $('.guanka').eq(guankanum).css('background', 'red');
+                            setTimeout(function () {
+                                value.blueset.forEach(
+                                    b => {
+                                        $('.fangkuai').eq(b).css('animation', 'mythird .5s linear forwards');
+                                        $('.remain').text(0);
+                                    });
+                            }, 500);
+                            setTimeout(function () {
+                                nextguanka(value.num);
+                            }, 1800);
+
+
+                        }
+                    })
+                }
+            })
+        }
+
+        function nextguanka(num) {
+            guankanum++;
+            if (guankanum >= 6) {
+                layer.open({
+                    type: 1,
+                    title: false,
+                    content: '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;"><h1>游戏结束</h1></div>',
+                    closeBtn: 0,
+                    shadeClose: false
+                    , btn: ['再来一次', '回到菜单',]
+                    , yes: function (index, layero) {
+                        //按钮【再来一次】的回调
+                        $('.guanka').css('background', 'white');
+                        guankanum = 0;
+                        guanka(4);
+                        layer.close(index);
+                    }
+                    , btn2: function (index, layero) {
+                        window.location.href = '../index.html';
+                    }
+
+                });
+            } else {
+                guanka(num + 4);
+            }
+
+        }
+
+        guanka(4);
+    </script>
+</body>
+
+</html>

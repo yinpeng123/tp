@@ -1,0 +1,39 @@
+#footer{
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	height: 3rem;
+	font-size: 0.25rem;
+	background: white;
+	border-top: 0.013333rem solid #CCCCCC;
+	width: 100%;
+}
+#footer>div{
+	width: 6rem;
+	height: 2.6rem;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.footer_home{
+	width: 1rem;
+	height: 1.1rem;
+	margin: auto;
+	background: url(../images/home.png) no-repeat center;
+	background-size:100% 100%;
+}
+.footer_com{
+	width: 1rem;
+	height: 1.1rem;
+	margin: auto;
+	background: url(../images/com.png) no-repeat center;
+	background-size:100% 100%;
+}
+.footer_mine{
+	width: 1rem;
+	height: 1.1rem;
+	margin: auto;
+	background: url(../images/mine.png) no-repeat center;
+	background-size:100% 100%;
+}

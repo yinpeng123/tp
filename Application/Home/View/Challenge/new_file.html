@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <!--利用cdn添加js和css库  -->
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+ 
+</head>
+<body style="text-align: center; padding: 100px;">
+ 
+ 姓名： <input type="text" name="name" id="yourName" /><br>
+ 年龄： <input type="text" name="age" id="yourAge" /><br>
+ 性别： <input type="text" name="sex"  id="yourSex"><br>
+ 文件：<input type="file" name="file" id="file"><br>
+ 
+<button id="send">提交</button>
+<br><br><br><br>
+ 
+<div id="result">结果：</div>
+</body>   
+ 
+<script type="text/javascript">
+ 
+  $(function () {
+      $("#send").click(function () {
+ 
+          var name = $("#yourName").val();
+          var age = $("#yourAge").val();
+           var sex = $("#yourSex").val();
+ 
+           var file = $("#file").val(); //获取文件路径名
+           console.log(file);
+ 
+           var index = file.lastIndexOf("\\"); //最后一个匹配转义字符'\\'的索引位置
+           console.log(index);
+ 
+           console.log(file.substring(index+1));  //获取最后'\\'的后面字符串便是文件名
+ 
+           var formData = new FormData();
+ 
+           formData.append('name',name);
+           formData.append('age',age);
+           formData.append('sex',sex);
+           formData.append('file',file);
+          
+           $.ajax({
+             type: "POST",
+             url: "/index.php/Home/index/upload",  //同目录下的php文件
+           
+            data:formData,
+            dataType:"json", //声明成功使用json数据类型回调
+ 
+            //如果传递的是FormData数据类型，那么下来的三个参数是必须的，否则会报错
+             cache:false,  //默认是true，但是一般不做缓存
+             processData:false, //用于对data参数进行序列化处理，这里必须false；如果是true，就会将FormData转换为String类型
+             contentType:false,  //一些文件上传http协议的关系，自行百度，如果上传的有文件，那么只能设置为false
+             
+             success: function(msg){  //请求成功后的回调函数
+ 
+                $("#result").append("你的名字是"+msg.name+"，性别："+msg.sex+"，年龄："+msg.age+"，上传的文件名："+msg.file);
+ 
+            }
+        });
+ 
+      })
+  })
+  $('.chat_content').append('<div class="main_hint">\
+						<span class="hint_font">官方提示</span>\
+						<span id="user_one">张三</span>送给\
+						<span id="user_two">李四</span>一个大写的\
+						<i class="praise"></i>\
+					</div>');
+ $('.chat_content').append('<div class="main_hint">\
+						<span class="hint_font">官方提示</span>\
+						<span id="user_one">张三</span>送给\
+						<span id="user_two">李四</span>一个大写的\
+						<i class="trample"></i>\
+					</div>');
+</script>
+ 
+ 
+</html>

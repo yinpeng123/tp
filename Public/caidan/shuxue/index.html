@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>数学计算</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../layer/layer.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            flex-direction: column;
+            background: lemonchiffon;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 50px;
+            margin-bottom: 200px;
+            background: white;
+            border: 1px lightgray solid;
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: 700;
+            transform-origin: 50% 120%;
+            box-shadow: 6px 6px 5px #999999;
+        }
+
+        button {
+            width: 100px;
+        }
+
+        .rightnum {
+            margin-right: 30px;
+        }
+    </style>
+    <audio style="display:none" autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="./audio.mp3">
+        你的浏览器版本太低，不支持audio标签
+    </audio>
+    <div class="header">
+        <p>游戏分数：<span class="rightnum">0</span></p>
+        <p>倒计时：<span class="time">20.00</span><span>s</span></p>
+    </div>
+    <p>算式计算结果是对的吗？</p>
+    <div class="card"><span class="num1"></span>
+        <span class="operation"></span>
+        <span class="num2"></span>
+        <span class="equals">=</span>
+        <span class="result"></span></div>
+    <div><button class="no">否</button><button class="yes">是</button></div>
+
+    <script>
+        var rightnum = 0;
+        var maxnum = 30;
+        var status;
+        function getRightResult(num1, num2, operation) {
+            switch (operation) {
+                case '+':
+                    return num1 + num2;
+                    break;
+                case '-':
+                    return num1 - num2;
+                    break;
+                case 'x':
+                    return num1 * num2;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+        }
+
+        function getWrongResult(num1, num2, operation) {
+            switch (operation) {
+                case '+':
+                    return num1 > num2 ? (num1 + num2 + 1) : (num1 + num2 - 1);
+                    break;
+                case '-':
+                    return num1 > num2 ? (num1 - num2 + 1) : (num1 - num2 - 1);
+                    break;
+                case 'x':
+                    return num1 > num2 ? num1 * (num2 + 1) + 1 : num1 * (num2 - 1) - 1;
+                    break;
+                default:
+                    return 0;
+                    break;
+            }
+        }
+        function createFormula() {
+            let num1 = parseInt(Math.random() * 20);
+            let num2 = parseInt(Math.random() * 20);
+            let operation = parseInt(Math.random() * 3);
+            switch (operation) {
+                case 0:
+                    operation = '+';
+                    break;
+                case 1:
+                    operation = '-';
+                    break;
+                case 2:
+                    operation = 'x';
+                    break;
+                default:
+                    break;
+            }
+
+            let result = parseInt(Math.random() * 2);
+            switch (result) {
+                case 0:
+                    result = getWrongResult(num1, num2, operation);
+                    status = 'wrong';
+                    break;
+                case 1:
+                    result = getRightResult(num1, num2, operation);
+                    status = 'right';
+                    break;
+
+                default:
+                    break;
+            }
+
+            $('.num1').text(num1);
+            $('.num2').text(num2);
+            $('.operation').text(operation);
+            $('.result').text(result);
+        };
+
+        createFormula();
+
+        $('.yes').click(function () {
+            if (status == 'right') {
+                rightnum++;
+            } else {
+                rightnum--;
+                layer.msg('X', { time: 100 });
+            }
+            createFormula();
+        });
+        $('.no').click(function () {
+            if (status == 'right') {
+                rightnum--;
+                layer.msg('X', { time: 100 });
+            } else {
+                rightnum++;
+            }
+            createFormula();
+        });
+        (function setTime() {
+            let timer = setInterval(function () {
+                let num = ($('.time').text() - .01).toFixed(2);
+                if (num <= 0) {
+                    // $('.time').text(0);
+                    // $('.card').css('transform', 'rotate(0deg)')
+                    clearInterval(timer);
+                    // layer.open({
+                    //     type: 1,
+                    //     title: false,
+                    //     closeBtn: 0,
+                    //     shadeClose: true,
+                    //     skin: 'yourclass',
+                    //     content: '自定义HTML内容'
+                    // });
+                    layer.open({
+                        type: 1,
+                        title: false,
+                        content: '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;"><h1>游戏结束</h1><p>游戏分数：' + rightnum + '</p><p>历史最高分数：' + maxnum + '</p></div>',
+                        closeBtn: 0,
+                        shadeClose: false
+                        , btn: ['再来一次', '回到菜单',]
+                        , yes: function (index, layero) {
+                            //按钮【再来一次】的回调
+                            rightnum = 0;
+                            $('.rightnum').text(rightnum);
+                            $('.time').text('20.00');
+                            setTime();
+                            layer.close(index);
+                        }
+                        , btn2: function (index, layero) {
+                            //按钮【回到菜单】的回调
+                            window.location.href = '../index.html';
+                        }
+
+                    });
+
+
+                }
+                $('.time').text(num);
+
+            }, 10)
+        })();
+    </script>
+</body>
+
+</html>

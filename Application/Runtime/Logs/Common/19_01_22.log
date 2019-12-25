@@ -1,0 +1,18 @@
+[ 2019-01-22T09:57:38+08:00 ] 69.58.178.57 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-01-22T15:19:34+08:00 ] 114.244.211.44 /index.php/adm9in/challange/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+ERR: 无法加载模块:Adm9in
+
+[ 2019-01-22T22:25:49+08:00 ] 118.199.78.8 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+ERR: 无法加载模块:Favicon
+

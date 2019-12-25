@@ -1,0 +1,172 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+	<link rel="stylesheet" type="text/css" href="/Public/eyesight/css/index.css"/>
+</head>
+<body>
+	<div id="app">
+		<div id="header">
+			查视力
+		</div>
+		<div id="nav" class="clearfix">
+			<div class="nav_list active">视力检测</div>
+			<div class="nav_list">色盲测试</div>
+			<div class="nav_list">散光测试</div>
+		</div>
+		<div class="clearfix" id="content_box">
+			<div class="content detection">
+				<div class="detection_nav">保持手机在眼前的40cm处，选择E的朝向</div>
+				<div class="detection_con clearfix">
+					<div class="detection_l detection_num">0.1</div>
+					<div class="datetime-c detection_img">
+						<div id="state">
+						</div>
+						<div id="detection_test" class="xia">
+							<div id="detection_img_rel">
+								
+							</div>
+						</div>
+					</div>
+					<div class="detection_r detection_num">4.0</div>
+				</div>
+				<div class="detection_ruler">
+				</div>
+				<div class="ruler clearfix">
+					<div class="ruler_re">
+						<div class="ruler_table font_color">
+							<p>4.0</p>
+							<p>0.1</p>
+						</div>
+						<div class="ruler_table">
+							<p>4.1</p>
+							<p>0.12</p>
+						</div>
+						<div class="ruler_table">
+							<p>4.2</p>
+							<p>0.15</p>
+						</div>
+						<div class="ruler_table">
+							<p>4.3</p>
+							<p>0.2</p>
+						</div>
+						<div class="ruler_table">
+							<p>4.4</p>
+							<p>0.25</p>
+						</div>
+						<div class="ruler_table">
+							<p>4.5</p>
+							<p>0.3</p>
+						</div>
+						<div class="ruler_table">
+							<p>4.6</p>
+							<p>0.4</p>
+						</div>
+						<div class="ruler_table">
+							<p>4.7</p>
+							<p>0.5</p>
+						</div>
+						<div class="ruler_table">
+							<p>4.8</p>
+							<p>0.6</p>
+						</div>
+						<div class="ruler_table">
+							<p>4.9</p>
+							<p>0.8</p>
+						</div>
+						<div class="ruler_table">
+							<p>5.0</p>
+							<p>1.0</p>
+						</div>
+						<div class="ruler_table">
+							<p>5.1</p>
+							<p>1.2</p>
+						</div>
+						<div class="ruler_table">
+							<p>5.2</p>
+							<p>1.5</p>
+						</div>
+						<div class="ruler_table">
+							<p>5.3</p>
+							<p>2.0</p>
+						</div>
+					</div>
+				</div>
+				<div class="detection_choose">
+					<div class="detection_btn">上</div>
+					
+					<div class="clearfix choose_con">
+						<div class="detection_btn choose_btn_l">左</div>
+						<div class="choose_btn" id="choose_btn">看不清楚</div>
+						<div class="detection_btn choose_btn_r">右</div>
+					</div>
+					
+					<div class="detection_btn btn_xia">下</div>
+				</div>
+			</div> 
+			<div class="content colortest none" id="best">
+				<div class="content_nav">
+					<div class="nav_main clearfix">
+						<div class="nav_ball "></div>
+						
+						<div class="nav_bar"></div>
+						
+						<div class="nav_ball"></div>
+						
+						<div class="nav_bar"></div>
+						
+						<div class="nav_ball"></div>
+						
+						<div class="nav_bar"></div>
+						
+						<div class="nav_ball"></div>
+						
+						<div class="nav_bar"></div>
+						
+						<div class="nav_ball"></div>
+					</div>
+				</div>
+				<div class="content_img test_img">
+					<div class="test_img_l"></div>
+					<div class="test_img_r"></div>
+				</div>
+				<div class="content_text">
+					请填写图片中的数字
+				</div>
+				<div class="picker_content">
+					<div class="picker_top"><span id="picker_top_l">9</span> <span id="picker_top_r">9</span></div>
+					<input type="" name="" id="picker" value="" placeholder="0 0" />
+					<div class="picker_bottom"><span id="picker_bottom_l">1</span> <span id="picker_bottom_r">1</span></div>
+				</div>
+				<div id="btn_content">
+					<button class="btn_l">看不清楚</button>
+					<button class="btn_r">确认输入</button>
+				</div>
+			</div>
+			<div id="content" class="content none">
+				<div class="content_img">
+					
+				</div>
+				<div class="content_text">
+					请确保直视图片，选择您观察的结果
+					<div class="content_font">
+						<label for="one"><input type="radio" name="one" id="one"/>图中某线条黑而清晰</label><br />
+						<label for="two"><input type="radio" name="one" id="two"/>图中个线条粗细均匀</label>
+					</div>
+				</div>
+				<button class="btn">提交</button>
+			</div>
+		</div>
+	</div>
+		
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="/Public/eyesight/js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

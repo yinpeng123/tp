@@ -1,0 +1,141 @@
+
+<!-- 头部公共文件 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="__PUBLIC__/layui/css/layui.css" media="all" />
+    <style>
+
+        .pages a,
+        .pages span {
+            display: inline-block;
+            padding: 2px 5px;
+            margin: 0 1px;
+            border: 1px solid #f0f0f0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .pages a,
+        .pages li {
+            display: inline-block;
+            list-style: none;
+            text-decoration: none;
+            color: #58A0D3;
+        }
+
+        .pages a.first,
+        .pages a.prev,
+        .pages a.next,
+        .pages a.end {
+            margin: 0;
+        }
+
+        .pages a:hover {
+            border-color: #50A8E6;
+        }
+
+        .pages span.current {
+            background: #50A8E6;
+            color: #FFF;
+            font-weight: 700;
+            border-color: #50A8E6;
+        }
+    </style>
+</head>
+<body class="kit-theme">
+
+<div class="layui-layout layui-layout-admin kit-layout-admin">
+
+    <!-- 左侧公共菜单文件 -->
+    <include file="Public:menu" />
+    <div class="layui-body" id="container" style="padding:0 2px;">
+        <div class="tplay-body-div">
+            <div class="layui-tab">
+                <ul class="layui-tab-title">
+                    <li  class="layui-this"><a href="/index.php/Admin/article/index" class="a_menu">文章管理</a></li>
+                    <li><a href="/index.php/Admin/article/publish" class="a_menu">新增文章</a></li>
+                </ul>
+            </div>
+
+            <table class="layui-table" lay-size="sm">
+                <colgroup>
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>文章标题</th>
+                    <th>文章简介</th>
+                    <th>文章作者</th>
+                    <th>阅读量</th>
+                    <th>点赞量</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="article" id="vo">
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.title}</td>
+                        <td>{$vo.desc}</td>
+                        <td>{$vo.author}</td>
+                        <td>{$vo.reading}</td>
+                        <td>{$vo.like}</td>
+                        <td>{$vo.create_time}</td>
+                        <td>
+                            <a href="{:U('admin/article/publish')}?id={$vo.id}" style="color: #ffffff" class="layui-btn">编辑</a>
+                            <a href="javascript:" style="color: #ffffff" class="layui-btn delete" id="{$vo.id}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+
+                </tbody>
+
+            </table>
+            <div class="pages">
+                {$page}
+            </div>
+            <div style="padding:0 20px;"></div>
+            <script src="__PUBLIC__/layui/layui.js"></script>
+            <script src="__PUBLIC__/layui/jquery.min.js"></script>
+
+            <script type="text/javascript">
+                layui.use('layer', function(){
+                    var layer = layui.layer;
+                });
+                $('.delete').click(function(){
+                    var id = $(this).attr('id');
+                    layer.confirm('确定要删除?', function(index) {
+                        $.ajax({
+                            url:"{:U('admin/article/del')}",
+                            type:'POST',
+                            data:{id:id},
+                            success:function(res) {
+                                layer.msg("删除成功");
+                                if(res == 1) {
+                                    setTimeout(function(){
+                                        location.href = res.url;
+                                    },1500)
+                                }
+                            }
+                        })
+                    })
+                })
+            </script>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>颜色混淆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../layer/layer.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            flex-direction: column;
+            background: beige;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 100px;
+            background: white;
+            border: 1px lightgray solid;
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: 700;
+            transform-origin: 50% 120%;
+            box-shadow: 6px 6px 5px #888888;
+        }
+
+        button {
+            width: 100px;
+        }
+
+        .rightnum {
+            margin-right: 30px;
+        }
+    </style>
+    <audio style="display:none" autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="./audio.mp3">
+        你的浏览器版本太低，不支持audio标签
+    </audio>
+    <div class="header">
+        <p>游戏分数：<span class="rightnum">0</span></p>
+        <p>倒计时：<span class="time">15.00</span><span>s</span></p>
+    </div>
+    <p>文字颜色和文字表述一样吗？</p>
+    <div class="card">蓝色</div>
+    <div><button class="no">否</button><button class="yes">是</button></div>
+    <script>
+        const colors = [
+            { "text": '蓝色', "value": 'blue' },
+            { "text": '灰色', "value": 'gray' },
+            { "text": '黑色', "value": 'black' },
+            { "text": '红色', "value": 'red' },
+            { "text": '绿色', "value": 'green' },
+            { "text": '紫色', "value": 'purple' },
+            { "text": '橙色', "value": 'orange' },
+            { "text": '青色', "value": 'cyan' },
+            { "text": '棕色', "value": 'brown' },
+            { "text": '粉色', "value": 'pink' }
+        ];
+        var rightnum = 0;
+        var maxnum = 50;
+        var i = parseInt(Math.random() * 10);
+        var j;
+        if (parseInt(Math.random() * 2)) {
+            j = i;
+        } else {
+            j = parseInt(Math.random() * 10);
+        }
+
+        var currentText = colors[i].text;
+        var currentColor = colors[j].value;
+        $('.card').text(currentText);
+        $('.card').css('color', currentColor);
+
+        (function wetherScroll() {
+            var sel = 'yes';
+            var startX = startY = endX = endY = 0;
+            $('body').on('touchstart', function (event) {
+                var touch = event.originalEvent.targetTouches[0];
+                //滑动起点的坐标
+                startX = touch.pageX;
+                startY = touch.pageY;
+            });
+            $('body').on("touchmove", function (event) {
+                var touch = event.originalEvent.targetTouches[0];
+                //手势滑动时，手势坐标不断变化，取最后一点的坐标为最终的终点坐标
+                endX = touch.pageX;
+                endY = touch.pageY;
+                var distanceX = (endX - startX) / 2;
+                $('.card').css('transform', 'rotate(' + distanceX + 'deg)');
+
+
+            })
+            $('body').on("touchend", function (event) {
+
+                var distanceX = endX - startX;
+                if (endX == 0) { return; }
+                if (distanceX / 2 > 23) {
+                    sel = 'yes';
+                    isRight(sel);
+                }
+                if (distanceX / 2 < -23) {
+                    sel = 'no';
+                    isRight(sel);
+                }
+                //移动端设备的屏幕宽度
+                $('.card').css('transform', 'rotate(0deg)')
+                startX = startY = endX = endY = 0;
+            })
+            $('.yes').on('click', function () {
+                sel = 'yes';
+                isRight(sel);
+
+            })
+            $('.no').on('click', function () {
+                sel = 'no';
+                isRight(sel);
+
+            })
+        })();
+        function isRight(sel) {
+            if (i == j) {
+                if (sel === 'yes') {
+                    rightnum++;
+                    $('.rightnum').text(rightnum);
+                } else {
+                    rightnum--;
+                    $('.rightnum').text(rightnum);
+                    layer.msg('X');
+                }
+            } else {
+                if (sel === 'no') {
+                    rightnum++;
+                    $('.rightnum').text(rightnum);
+                } else {
+                    rightnum--;
+                    $('.rightnum').text(rightnum);
+                    layer.msg('X', { time: 100 });
+                }
+            }
+            i = parseInt(Math.random() * 10);
+            if (parseInt(Math.random() * 2)) {
+                j = i;
+            } else {
+                j = parseInt(Math.random() * 10);
+            }
+
+            currentText = colors[i].text;
+            currentColor = colors[j].value;
+
+            $('.card').text(currentText);
+            $('.card').css('color', currentColor);
+
+        }
+        (function setTime() {
+            let timer = setInterval(function () {
+                let num = ($('.time').text() - .01).toFixed(2);
+                if (num <= 0) {
+                    // $('.time').text(0);
+                    // $('.card').css('transform', 'rotate(0deg)')
+                    clearInterval(timer);
+                    // layer.open({
+                    //     type: 1,
+                    //     title: false,
+                    //     closeBtn: 0,
+                    //     shadeClose: true,
+                    //     skin: 'yourclass',
+                    //     content: '自定义HTML内容'
+                    // });
+                    layer.open({
+                        type: 1,
+                        title: false,
+                        content: '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;"><h1>游戏结束</h1><p>游戏分数：' + rightnum + '</p><p>历史最高分数：' + maxnum + '</p></div>',
+                        closeBtn: 0,
+                        shadeClose: false
+                        , btn: ['再来一次', '回到菜单',]
+                        , yes: function (index, layero) {
+                            //按钮【再来一次】的回调
+                            rightnum = 0;
+                            $('.rightnum').text(rightnum);
+                            $('.time').text('15.00');
+                            setTime();
+                            layer.close(index);
+                        }
+                        , btn2: function (index, layero) {
+                            //按钮【回到菜单】的回调
+                            window.location.href = '../index.html';
+                        }
+
+                    });
+
+
+                }
+                $('.time').text(num);
+
+            }, 10)
+        })();
+        
+
+    </script>
+</body>
+
+</html>
+
+</html>

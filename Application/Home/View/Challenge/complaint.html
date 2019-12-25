@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>投诉页面</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/index/css/complaint.css"/>
+		<link rel="stylesheet" href="__PUBLIC__/index/css/footer.css" />
+		<script type="text/javascript" src="__PUBLIC__/index/js/vconsole.min.js"></script>
+		<script type="text/javascript">
+            var vConsole = new VConsole();
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_container">
+				<div class="trigon_con">
+				</div>
+			</div>
+				<div class="header_main"> 
+					<p class="complainant">投诉人<span id="complainant">"张三"</span></p>
+					<p class="reason"><span class="star">*</span>投诉理由</p>
+					<textarea name="arry[]" rows="" cols="" placeholder="请输入理由" class="reason_main"></textarea>
+					<p class="upload"><span class="star">*</span>上传图片</p>
+					<div class="uplod_img_con">
+						<div class="uplod_img">
+							<input type="file" class="face_upload" name="arry[]" />
+					    	<img src="" height="200" width="200" class="xs"/>
+						</div>
+					</div>
+					<button class="btn">确定</button>
+					<p class="tag">为保障您的投诉更迅速处理，请上传投诉依据</p>
+				</div>
+		</div>
+		<div id="footer">
+			<!--<div>-->
+				<!--<div class="footer_img footer_home"></div>-->
+				<!--<div>首页</div>-->
+			<!--</div>-->
+			<!--<div>-->
+				<!--<div class="footer_img footer_com"></div>-->
+				<!--<div>社区</div>-->
+			<!--</div>-->
+			<!--<div>-->
+				<!--<div class="footer_img footer_mine"></div>-->
+				<!--<div>我的</div>-->
+			<!--</div>-->
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+	<script>
+        /(iPhone|iPad|iPhone OS|Phone|iPod|iOS)/i.test(navigator.userAgent)&&(head=document.getElementsByTagName('head'),viewport=document.createElement('meta'),viewport.name='viewport',viewport.content='target-densitydpi=device-dpi, width=480px, user-scalable=no',head.length>0&&head[head.length-1].appendChild(viewport));
+	</script>
+	<script type="text/javascript">
+		$('.trigon_con').click(function(){
+			 window.history.back()
+		})
+		 $(function(e){
+            function getObjectURL(file){
+                var url=null
+                if(window.createObjectURL!=undefined){ // basic
+                    url=window.createObjectURL(file)
+                }else if(window.URL!=undefined){ // mozilla(firefox)
+                    url=window.URL.createObjectURL(file)
+                } else if(window.webkitURL!=undefined){ // webkit or chrome
+                    url=window.webkitURL.createObjectURL(file)
+                }
+                return url  ;
+            }
+            $(document).on('change', '.face_upload', function(){
+                var objUrl=getObjectURL(this.files[0]);
+                var size=this.files[0].size;
+                if(size>=1024000*10)bottomTip("图片超过10M了哦",0);
+                else{
+                    if(objUrl){
+                        $(this).next().attr("src",objUrl);
+                        $(this).next().css("opacity","1")
+                    }
+	              }
+              	if ($(this).parent().next().length == 0 && $('.uplod_img_con').children().length<3){
+                	 $('.uplod_img_con').append('<div class="uplod_img">\
+							<input type="file" class="face_upload" name="arry[]" />\
+					    	<img src="" height="200" width="200" class="xs"/>\
+						</div>')
+              	}
+              	console.log($(this).val());
+              	console.log();
+            })  
+        });
+        $('.btn').click(function(){
+        	var Things = $('.face_upload');
+        	var $reson = $('.reason_main').val() != "";
+      		var $img = Things[0].files[0]!= undefined;
+        	if ($reson && $img) {
+
+        		uploadFile(Things);
+        	}else{
+        		alert('请上传原因和图片');
+        	}
+        	
+        })
+        function uploadFile(Things){
+            var fd = new FormData();
+            for (var i = 0; i < Things.length; i++) {
+            	if (Things[i].files[0]!= undefined) {
+            		fd.append("arry ["+i+"]",Things[i].files[0]);
+            	}
+            }
+            var cause = $('.reason_main').val();
+            var room_id = GetQueryString("room_id");
+            var	complainant = GetQueryString("complainant");
+            var	by_complainant =GetQueryString("by_complainant");
+            fd.append("room_id",room_id);
+            fd.append("complainant",complainant);
+            fd.append("by_complainant",by_complainant);
+            fd.append("complainant_cause",cause);
+			fd.append("openid","2");
+            console.log(fd);
+            $.ajax({
+                url:"/index.php/home/index/complain",
+                type:"post",
+                async:false,
+                contentType: false,
+        		processData: false,
+                data:fd,
+                success:function(res){
+	                window.history.back()
+                },
+                error:function(res){
+                	console.log(res)
+                }
+            })
+        }
+        
+function GetQueryString(name){
+	     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	     var r = window.location.search.substr(1).match(reg);
+	     if(r!=null)return  unescape(r[2]); return null;
+}
+	</script>
+</html>

@@ -1,0 +1,9 @@
+[ 2019-05-21T00:30:15+08:00 ] 47.110.180.38 /index.php/?s=admin/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=3.14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+ERR: 无法加载控制器:\think\app
+

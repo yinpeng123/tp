@@ -1,0 +1,12 @@
+[ 2018-12-19T14:12:17+08:00 ] 127.0.0.1 /index.php/task/index/everyday_plan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:Task
+
+[ 2018-12-19T14:12:24+08:00 ] 127.0.0.1 /index.php/task/everyday_plan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+ERR: 无法加载模块:Task
+

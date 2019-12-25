@@ -1,0 +1,144 @@
+[ 2019-03-04T11:41:27+08:00 ] 112.97.56.79 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T11:41:40+08:00 ] 112.97.56.79 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T14:08:18+08:00 ] 112.97.56.79 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T14:10:24+08:00 ] 112.97.56.79 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T14:11:11+08:00 ] 61.141.77.174 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T14:11:13+08:00 ] 61.141.77.174 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T15:08:31+08:00 ] 47.97.69.109 /index.php?s=captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-03-04T15:09:28+08:00 ] 101.37.162.187 /index.php?s=captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-03-04T15:14:20+08:00 ] 47.97.31.238 /index.php?s=captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-03-04T15:49:59+08:00 ] 118.31.119.8 /index.php/?s=index/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+ERR: 无法加载模块:Index
+
+[ 2019-03-04T15:49:59+08:00 ] 118.31.119.8 /index.php/?s=user/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+ERR: 无法加载模块:User
+
+[ 2019-03-04T15:49:59+08:00 ] 118.31.119.8 /index.php/?s=install/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+ERR: 无法加载模块:Install
+
+[ 2019-03-04T15:50:57+08:00 ] 47.97.44.200 /index.php/?s=index/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+ERR: 无法加载模块:Index
+
+[ 2019-03-04T15:50:57+08:00 ] 47.97.44.200 /index.php/?s=user/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+ERR: 无法加载模块:User
+
+[ 2019-03-04T15:50:57+08:00 ] 47.97.44.200 /index.php/?s=install/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+ERR: 无法加载模块:Install
+
+[ 2019-03-04T15:56:17+08:00 ] 121.43.34.65 /index.php/?s=index/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+ERR: 无法加载模块:Index
+
+[ 2019-03-04T15:56:17+08:00 ] 121.43.34.65 /index.php/?s=user/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+ERR: 无法加载模块:User
+
+[ 2019-03-04T15:56:17+08:00 ] 121.43.34.65 /index.php/?s=install/%5Cthink%5Capp/invokefunction&function=call_user_func&vars[0]=md5&vars[1]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+ERR: 无法加载模块:Install
+
+[ 2019-03-04T21:04:27+08:00 ] 61.141.77.174 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T21:04:28+08:00 ] 61.141.77.174 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T21:10:34+08:00 ] 61.141.77.174 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T21:12:02+08:00 ] 61.141.77.174 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-04T23:05:39+08:00 ] 139.180.212.18 /?s=index/%09hink%07pp/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=echo%20cG9uaWVzCg==%20%7C%20base64%20-d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+ERR: 无法加载模块:Index
+
+[ 2019-03-04T23:05:40+08:00 ] 139.180.212.18 /?s=index/%09hink%5CContainer/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=echo%20cG9uaWVzCg==%20%7C%20base64%20-d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载模块:Index
+

@@ -1,0 +1,142 @@
+.header{
+	height: 14.56rem;
+	background: url(../images/MyChallenge/toutu.png) no-repeat center;
+	background-size:100% 100%;
+}
+.header_arrow{
+	height: 1.573333rem;
+	overflow: hidden;
+}
+._arrow{
+	width: 0.66666rem;
+	height: 0.64rem;
+	margin:0.466666rem 0 0 0.76rem;
+	cursor: pointer;
+	0.64rem
+}
+.toChallenge_con{
+	height: 5.84rem;
+}
+.toChallenge_box{
+	height: 4.9rem;
+}
+.toChallenge{
+	width: 2rem;
+	height: 0.64rem;
+	margin-left: 7rem;
+	cursor: pointer;
+}
+.toChallenge_rel{
+	display: block;
+	width: 2rem;
+	height: 0.64rem;
+}
+.toconquer_conone{
+	height: 0.8rem;
+}
+.toconquer_contwo{
+	width: 7.76rem;
+	height: 2.16rem;
+	margin: auto;
+}
+.conquer{
+	float: left;
+	width: 2.133333rem;
+	height: 2.133333rem;
+}
+.toconquer_21{
+	margin-left: 0.64rem;
+}
+.toconquer_my{
+	margin-left: 0.64rem;
+}
+.tocon{
+	width: 2.133333rem;
+	height: 2.133333rem;
+}
+.manifesto_con{
+	position: relative;
+	padding-bottom: 1.546666rem;
+}
+.manifesto_one{
+	height: 4.533333rem;
+	background: #1b2434;
+}
+.manifesto_box_one{
+	padding-left: 0.746666rem;
+}
+.box_one_left{
+	float: left;
+	width: 3.44rem;
+	height: 4rem;
+	margin-top: 0.186666rem;
+	background: url(../images/MyChallenge/one.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.box_one_right{
+	float: left;
+	margin-top: 0.96rem;
+	margin-left:1.2rem;
+}
+.tagline{
+	font-size: 0.426666rem;
+	color: #FACC16;
+}
+.keep{
+	position: absolute;
+	top: -0.133333rem;
+	width: 100%;
+	height: 0.233333rem;
+	background: #1b2434;
+}
+.tagline_one{
+	font-size: 0.266666rem;
+	color: white;
+}
+.mid{
+	margin-top: 0.48rem;
+}
+.manifesto_box_two{
+	height: 5.2rem;
+	background: #facc16;
+}
+.box_two_left{
+	float: left;
+	margin-left: 1.093333rem;
+}
+.taglinetwo{
+	margin-top: 1.333333rem;
+	font-size: 0.426666rem;
+}
+.tagline_two{
+	color:#565656;
+}
+.box_two_right{
+	float: left;
+	margin-left: 1.933333rem;
+	margin-top: 0.453333rem;
+	width: 2.106666rem;
+	height: 4.293333rem;
+	background: url(../images/MyChallenge/two.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.manifesto_three{
+	height: 5.413333rem;
+	background: #1b2434;
+}
+.box_three_left{
+	float: left;
+	width: 2.08rem;
+	height: 4.213333rem;
+	margin: 0.72rem 0 0 1.093333rem;
+	background: url(../images/MyChallenge/three.png) no-repeat center;
+	background-size:100% 100%;
+}
+.box_three_right{
+	float: left;
+	margin: 1.466666rem 0 0 1.653333rem;
+}
+.tagline_three{
+	font-size: 0.293333rem;
+	color: white;
+}

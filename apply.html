@@ -1,0 +1,899 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" http-equiv="Content-Type" content="text/html; charset=uft-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta charset="uft-8">
+    <title>报名</title>
+    <script type="text/javascript" src="__IMG__/jquery.js"></script>
+    <link rel="stylesheet" href="__IMG__/moban11/touch.css">
+    <link rel="stylesheet" href="__IMG__/swiper-3.4.2.min.css">
+
+
+    <script type="text/javascript" src="__IMG__/jquery_form_min.js"></script>
+    <script charset="utf-8" src="/editor/kindeditor.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript" src="__IMG__/common.js" ></script>
+    <script type="text/javascript" src="__IMG__/swiper.min.js"></script>
+    <style>
+        .focus span{width:5px;height:5px;margin-left:5px;border-radius:50%;background:#CDCDCD;font-size:0}
+        .focus span.current{background:red;}
+    </style>
+
+    <script>
+        var activityId = g_getQueryString("activity_id");
+        var order = g_getQueryString("order");
+        //签名相关字段
+        var appId;
+        var nonceStr;
+        var timestamp;
+        var url;
+        var signature;
+
+
+        //活动相关字段
+        var playerSum;
+        var voteSum;
+        var visitSum;
+        var signStartTime;
+        var signEndTime;
+        var voteStartTime;
+        var voteEndTime;
+        var name;
+        var currentTime;
+        var wxShareImg;
+        var headImgOne;
+        var headImgTwo;
+        var headImgThree;
+        var headImgFour;
+        var headImgFive;
+        var wxContactImg;
+
+        $(function() {
+            $("#itemcount").append(playerSum);
+            $("#itempiao").append(voteSum);
+            $("#visitCount").append(visitSum);
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+        });
+
+
+        var _width = window.innerWidth;
+        var _height = window.innerHeight;
+
+
+
+
+
+        function validate_required(inputName,str){
+            if ($("#"+inputName).val() ==null||$("#"+inputName).val()==""){
+                alert(str);
+                return false;
+            } else {
+                return true;
+            }
+        }
+        function spinnerShow(){
+            $("#spinner_div_img").css("width", _width * 0.6);
+            $("#spinner_div_img").css("height", _width * 0.3);
+            $("#spinner_div_img").css("margin-left", _width * 0.3 * -1);
+            $("#spinner_div_img").css("margin-top", _width * 0.15 * -1);
+            $("#spinner_div").show();
+        }
+        function spinnerHidden(){
+            $("#spinner_div").hide();
+        }
+    </script>
+
+
+    <style>
+        .spinner {
+            margin: 100px auto;
+            width: 20px;
+            height: 20px;
+            position: relative;
+        }
+
+        .container1 > div, .container2 > div, .container3 > div {
+            width: 6px;
+            height: 6px;
+            background-color: #333;
+
+            border-radius: 100%;
+            position: absolute;
+            -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
+            animation: bouncedelay 1.2s infinite ease-in-out;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .spinner .spinner-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container2 {
+            -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+        }
+
+        .container3 {
+            -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+        }
+
+        .circle1 { top: 0; left: 0; }
+        .circle2 { top: 0; right: 0; }
+        .circle3 { right: 0; bottom: 0; }
+        .circle4 { left: 0; bottom: 0; }
+
+        .container2 .circle1 {
+            -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s;
+        }
+
+        .container3 .circle1 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+        }
+
+        .container1 .circle2 {
+            -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s;
+        }
+
+        .container2 .circle2 {
+            -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s;
+        }
+
+        .container3 .circle2 {
+            -webkit-animation-delay: -0.7s;
+            animation-delay: -0.7s;
+        }
+
+        .container1 .circle3 {
+            -webkit-animation-delay: -0.6s;
+            animation-delay: -0.6s;
+        }
+
+        .container2 .circle3 {
+            -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s;
+        }
+
+        .container3 .circle3 {
+            -webkit-animation-delay: -0.4s;
+            animation-delay: -0.4s;
+        }
+
+        .container1 .circle4 {
+            -webkit-animation-delay: -0.3s;
+            animation-delay: -0.3s;
+        }
+
+        .container2 .circle4 {
+            -webkit-animation-delay: -0.2s;
+            animation-delay: -0.2s;
+        }
+
+        .container3 .circle4 {
+            -webkit-animation-delay: -0.1s;
+            animation-delay: -0.1s;
+        }
+
+        @-webkit-keyframes bouncedelay {
+            0%, 80%, 100% { -webkit-transform: scale(0.0) }
+            40% { -webkit-transform: scale(1.0) }
+        }
+
+        @keyframes bouncedelay {
+            0%, 80%, 100% {
+                transform: scale(0.0);
+                -webkit-transform: scale(0.0);
+            } 40% {
+                  transform: scale(1.0);
+                  -webkit-transform: scale(1.0);
+              }
+        }
+
+        .file-box{
+            background:url(__IMG__/moban11/img_upload.png) no-repeat;
+            background-size: cover;
+        }
+
+        .s_imgMask{
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: rgba(0,0,0,0.5);
+            display: none;
+        }
+        .joinus_main .s_bigImg{
+            position: absolute;
+            width: 80%;
+            left: 50%;
+            top: 50%;
+        }
+        .joinus_main .s_bigImg img{
+            width: 100%;
+        }
+
+        .advertisement_joinus{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+        }
+        .advertisement_joinus a{
+            padding: 0 20px;
+        }
+
+        #ad_3{
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            margin: -90px 0 0 0;
+        }
+        .joinus_main{
+            margin-bottom: 100px!important;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<marquee class="advertisement_joinus"  style="display: none;"></marquee>
+
+<header id="header">
+
+    <div class="head-img1">
+    </div>
+    <input type="hidden" id="endjoin" value="1529384400" />
+    <div class="m_head clearfix">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {volist name="$act.thumb" id="vo"}
+                    <div class="swiper-slide"><img class="d-block w-100" src="{$vo|geturl}" alt="First slide"></div>
+                {/volist}
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <div class="head-img2">
+            <img src="__IMG__/moban11/header2.png"/>            <div class="total">
+            <dl>
+                <dt class="text">参赛数</dt>
+                <dd id="itemcount">{$num}</dd>
+            </dl>
+            <dl>
+                <dt class="text">投票数</dt>
+                <dd id="itempiao">{$vote_nums}</dd>
+            </dl>
+            <dl>
+                <dt class="text">访问量</dt>
+                <dd id="visitCount">{$act.pv}</dd>
+            </dl>
+        </div>
+        </div>
+    </div>
+</header>
+<script language="JavaScript">
+    var days= "{$act.end_time}" - "{$time}";
+    EndTimeMsg = days;//精确到秒
+
+    function show() {
+        h = Math.floor(EndTimeMsg / 60 / 60);
+        m = Math.floor((EndTimeMsg - h * 60 * 60) / 60);
+        s = Math.floor((EndTimeMsg - h * 60 * 60 - m * 60));
+        document.getElementById("DD").innerHTML = parseInt(h/24);
+        document.getElementById("HH").innerHTML = h-parseInt(h/24)*24;
+        document.getElementById("MM").innerHTML = m;
+        document.getElementById("SS").innerHTML = s;
+        EndTimeMsg--;
+        if (EndTimeMsg < 0){
+            document.getElementById("timediv").innerHTML = "活动已结束！";
+            document.getElementById("DD").innerHTML = "0";
+            document.getElementById("HH").innerHTML = "00";
+            document.getElementById("MM").innerHTML = "00";
+            document.getElementById("SS").innerHTML = "00";
+        }
+        if ("{$act.start_time}">"{$time}" ){
+            document.getElementById("timediv").innerHTML = "活动还未开始！";
+            document.getElementById("DD").innerHTML = "0";
+            document.getElementById("HH").innerHTML = "00";
+            document.getElementById("MM").innerHTML = "00";
+            document.getElementById("SS").innerHTML = "00";
+        }
+    }
+    setInterval("show()", 1000);
+</script>
+<div id="start">
+    <img src="__IMG__/moban11/start.png"/>
+    <a href="javascript:;" class="join_us">  </a>
+</div>
+
+<div id="end_time">
+    <img src="__IMG__/moban11/baoming_header3.png"/>
+    <div class="time" id="timediv">
+        <!--                        活动于<span>2018年2月26日12时00分00秒</span>结束-->
+        距离活动结束还剩:<strong id="DD"></strong>天 <strong id="HH"></strong>时 <strong id="MM"></strong>分 <strong id="SS"></strong>秒
+    </div>
+</div>
+
+<div class="joinus_main">
+
+    <div class="blank10"></div>
+
+    <form  id="yourformid" method="post" accept-charset="utf-8">
+        <input type="hidden" name="act_id" value="{$act.id}">
+        <dl class="clearfix"><dt>姓名</dt><dd><input type="text" class="input_txt" id="name" value="" name="name" placeholder="请输入姓名"></dd></dl>
+        <dl class="clearfix"><dt>电话</dt><dd><input type="text" class="input_txt" id="phone" value="" name="phone" placeholder="此手机号不会显示在页面"></dd></dl>
+        <dl class="clearfix"><dt>微信</dt><dd><input type="text" class="input_txt" id="wechat" value="" name="wechat" placeholder="此微信号不会显示在页面"></dd></dl>
+        <dl class="clearfix">
+        <dt>
+            参赛宣言:</dt>
+        <dd><textarea class="textarea" style="resize: none; font-size: 12px; text-indent: 12px; line-height: 24px; margin-top: -3px;" placeholder="请填写参赛宣言" name="declaration" id="declaration"></textarea></dd>
+    </dl>
+        <ul class="wrap_img" id="imglist" style="position: relative; top: 15px;">
+            <li class="file-box" id="upload_btn">
+                <input  class="file-btn" type="file" id="uploadButton" value="图片上传" accept="image/*"  tabindex="-1">
+            </li>
+        </ul>
+        <div class="s_imgMask">
+            <div class="s_bigImg">
+                <img src=""/>
+            </div>
+        </div>
+
+        <p class="txt">
+            您还可以上传<span id="upCount">5</span>张图片
+        </p>
+        <div class="btn_box">
+            <input class="submit"  name="signup" type="button" value="提交报名">
+            <br>
+            <!--            <a href="--><!--"><input type="button" class="button" value="返回首页"></a>-->
+        </div>
+        <div class="blank10"></div>
+    </form>
+
+</div>
+</div>
+<div id="ad_3">
+</div>
+
+<div id="fav_div" style="display:none;width: 100%;height: 100%; ">
+    <div style="top: 0; left: 0; background: #111111; position: fixed; z-index: 20;filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;width: 100%;height: 100%; ">
+    </div>
+    <img id="fav_img" src="" width="100px" height="100px" style="z-index: 99;position: fixed;vertical-align:middle;left:50%; top:50%;">
+    <img id="fav_img_two" src="" width="100px" height="100px" style="z-index: 90;position: fixed;vertical-align:middle;left:50%; top:50%;">
+
+</div>
+<div id="share_div" style="display:none;width: 100%;height: 100%; ">
+    <div style="top: 0; left: 0; background: #111111; position: fixed; z-index: 20;filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;width: 100%;height: 100%; ">
+    </div>
+    <img id="share_div_img" src="" width="200px" height="200px" style="z-index: 99;position: fixed;vertical-align:middle;left:50%; top:50%;">
+
+</div>
+
+
+<div id="spinner_div" style="display: none;">
+    <div style="top: 0; left: 0; background: #111111; position: fixed; z-index: 20;filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;width: 100%;height: 100%; ">
+    </div>
+    <img id="spinner_div_img" src="__IMG__/upimg.gif" width="200px" height="200px" style="z-index: 99;position: fixed;vertical-align:middle;left:50%; top:50%;">
+</div>
+<!-- 底部公共部分  -->
+<div id="footer">
+    <!--<img class="bg" src="./img/footer.png"/>-->
+    <ul>
+        <li class="allContestants">全部参赛</li>
+        <li class="currentRank">当前排名</li>
+        <li class="activeRule">活动规则</li>
+
+    </ul>
+    <script>
+        $('#footer .allContestants').click(function () {
+            window.location.href="index?act_id={$act.id}";
+        })
+
+        $('#footer .currentRank').click(function () {
+            window.location.href="ranking?act_id={$act.id}";
+        })
+        $('#footer .activeRule').click(function () {
+            window.location.href="recommend?act_id={$act.id}";
+        })
+    </script>
+</div>
+<!--end-->
+</body>
+</html>
+<script>
+    $(document).ready(function() {
+
+        $("#activityId").val(activityId);
+
+        //图片预览
+        function imgPreview(){
+            var $height =  window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+            $('.s_imgMask').css({'height':$height})
+            $('#imglist .s_imglist img').click(function(){
+                var s_src = $(this).attr('src');
+                $('.joinus_main .s_bigImg').find('img').attr('src',s_src);
+                $('.joinus_main .s_imgMask').fadeIn();
+                //计算定位
+                var $s_imgWidth = $('.joinus_main .s_bigImg').outerWidth();
+                var $s_imgHeight = $('.joinus_main .s_bigImg').outerHeight();
+                $('.joinus_main .s_bigImg').css({
+                    'margin-left': -($s_imgWidth)/2 + 'px',
+                    'margin-top': -($s_imgHeight)/2 + 'px'
+                })
+            })
+            $('.joinus_main .s_imgMask').click(function () {
+                $('.joinus_main .s_imgMask').fadeOut();
+            });
+        };
+
+        var viewImg = $("#imglist");
+        var imgcount = 0;
+        $("#uploadButton").bind("change",function () {
+            console.log(document.getElementById("uploadButton").files);
+            if(document.getElementById("uploadButton").files.length == 0){return;}
+            spinnerShow();
+            var formData = new FormData();
+            formData.append("Token", "bd219628c9c04841b50e6d0a613236ad5d22c84a:jHpkAcaIOBMq90kUidiFeiOz-y0=:eyJkZWFkbGluZSI6MTUzMDEwOTQwMiwiYWxidW0iOiIxNDE3NzE2In0=");
+            formData.append("aid", "1417716");
+            formData.append("deadline","1530109402");
+            formData.append("from", 'file');
+            formData.append("file", document.getElementById("uploadButton").files[0]);
+            jQuery.ajax({
+                url:'/upload',
+                data:formData,
+                contentType: false,
+                processData: false,
+                type:"POST",
+                success:function(e){
+                    spinnerHidden();
+                    if(imgcount == 4) {
+                        $("#upload_btn").hide();
+                    }
+                    viewImg.prepend('<li class="s_imglist"> <img src="' + e['src'] + '"/><input type="hidden" id="file'+ imgcount + '" name="fileup[]" value="' + e['id']  + '"> <div class="delete del"> 删除图片 </div> </li>');
+                    imgPreview();
+                    $(".del").bind("click", function () {
+                        $(this).parent('li').remove();
+                        document.getElementById("uploadButton").files = new Array()
+                        $("#upload_btn").show();
+                        imgcount --;
+                        var upcount = 5 - imgcount;
+                        $("#upCount").html('' + upcount);
+                    });
+                    imgcount++;
+                    var upcount = 5 - imgcount;
+                    $("#upCount").html('' + upcount);
+                },
+                error: function (e) {
+                    spinnerHidden();
+                    console.log(e);
+                    alert('图片太大，请上传小于5M的图片...');
+                }
+            });
+        });
+    });
+
+    function validate_form(thisform){
+        // $("#fav_img").css("width", _width * 0.6);
+        // $("#fav_img").css("height", _width * 0.3);
+        // $("#fav_img").css("margin-left", _width * 0.3 * -1);
+        // $("#fav_img").css("margin-top", _width * 0.15 * -1);
+        // if(currentTime < signStartTime || !1){
+        //     alert("活动还没有开始哦！");
+        //     return false;
+        // }
+        //
+        // if(signEndTime < currentTime){
+
+
+        //     $("#fav_img").attr('src',"__IMG__/end_join.png");
+        //     $("#fav_div").show();
+        //
+        //     $("#fav_div").bind("click", function () {
+        //         $("#fav_div").hide();
+        //     });
+        //     return false;
+        // }
+
+        var _info1_must = 1;
+        var _info2_must = 1;
+        var _info3_must = 1;
+        var _info4_must = 0;
+        var _info5_must = 0;
+        var _info6_must = 0;
+        var _info7_must = 0;
+        var _info8_must = 0;
+        var _info9_must = 0;
+        var _info0_must = 1;
+        if (!($("#file0").val() || $("#file1").val()||$("#file2").val()||$("#file3").val()||$("#file4").val())) {
+            alert("至少上传一张照片哦！");
+            return false;
+        }
+
+        if(_info1_must){
+            if (validate_required("name","姓名必须填写！") == false){
+                $("#name").focus();
+                return false;
+            }
+        }
+        if (_info2_must){
+            if (validate_required("wechat","微信必须填写！") == false){
+                $("#wechat").focus();
+                return false;
+            }
+        }
+        if (_info3_must){
+            if (validate_required("phone","电话必须填写！") == false){
+                $("#phone").focus();
+                return false;
+            }
+        }
+        if (_info4_must){
+            if (validate_required("schoolname","必须填写！") == false){
+                $("#schoolname").focus();
+                return false;
+            }
+        }
+        if (_info5_must){
+            if (validate_required("joinform","必须填写！") == false){
+                $("#joinform").focus();
+                return false;
+            }
+        }
+        if (_info6_must){
+            if (validate_required("info1","必须填写！") == false){
+                $("#info1").focus();
+                return false;
+            }
+        }
+        if (_info7_must){
+            if (validate_required("info2","必须填写！") == false){
+                $("#info2").focus();
+                return false;
+            }
+        }
+        if (_info8_must){
+            if (validate_required("info3","必须填写！") == false){
+                $("#info3").focus();
+                return false;
+            }
+        }
+        if (_info9_must){
+            if (validate_required("info4","必须填写！") == false){
+                $("#info4").focus();
+                return false;
+            }
+        }
+        if (_info0_must){
+            if (validate_required("declaration","参赛宣言必须填写！") == false){
+                $("#declaration").focus();
+                return false;
+            }
+        }
+
+
+        // if(activityId == 25) {
+        //     $("#fav_img").css('display',"none");
+        //     var _fav_img_width_two = _width * 0.8 / 2;
+        //     $("#fav_img_two").css("width", _width * 0.8);
+        //     $("#fav_img_two").css("height", _width * 0.8);
+        //     $("#fav_img_two").css("margin-left", _fav_img_width_two * -1);
+        //     $("#fav_img_two").css("margin-top", _fav_img_width_two * -1);
+        //     $("#fav_img_two").attr('src',"/upload/activity/20180805113713.jpg");
+        // }else {
+        //
+        //
+        //             if(wxContactImg  != undefined && wxContactImg != ''){
+        //                 var _fav_img_width = _width * 0.4 / 2;
+        //                 $("#fav_img").css("width", _width * 0.4);
+        //                 $("#fav_img").css("height", _width * 0.4);
+        //                 $("#fav_img").css("margin-left", _fav_img_width * -1);
+        //                 $("#fav_img").css("margin-top", _fav_img_width * -1 + 10);
+        //                 $("#fav_img").attr('src', wxContactImg);
+        //
+        //                 var _fav_img_width_two = _width * 0.8 / 2;
+        //                 $("#fav_img_two").css("width", _width * 0.8);
+        //                 $("#fav_img_two").css("height", _width * 0.8);
+        //                 $("#fav_img_two").css("margin-left", _fav_img_width_two * -1);
+        //                 $("#fav_img_two").css("margin-top", _fav_img_width_two * -1);
+        //                // $("#fav_img_two").attr('src',"/upload/activity/fav_img_background.jpg");
+        //             } else {
+        //                 $("#fav_img").css('display',"none");
+        //                 var _fav_img_width_two = _width * 0.8 / 2;
+        //                 $("#fav_img_two").css("width", _width * 0.8);
+        //                 $("#fav_img_two").css("height", _width * 0.8);
+        //                 $("#fav_img_two").css("margin-left", _fav_img_width_two * -1);
+        //                 $("#fav_img_two").css("margin-top", _fav_img_width_two * -1);
+        //               //  $("#fav_img_two").attr('src',"/upload/activity/fav_img_background_default.jpg");
+        //             }
+        //
+        // }
+
+
+        //      alert("报名成功");
+
+        var options = $.ajax({
+            url:"/applyadd",
+            type:'POST',
+            data:$('#yourformid').serialize(),
+            dataType : 'json',
+            async:true,
+            timeout:0,
+            success : function (data,statusText) {
+                if(data == "1") {
+                    $("#fav_div").show();
+                    $("#fav_div").bind("click", function () {
+                        setTimeout(function () {
+                            $("#fav_div").hide();
+                            var _fav_img_width = _width  / 2;
+                            var _fav_img_height = _height / 2;
+                            $("#share_div_img").css("width", _width);
+                            $("#share_div_img").css("height", _height);
+                            $("#share_div_img").css("margin-left", _fav_img_width * -1);
+                            $("#share_div_img").css("margin-top", _fav_img_height * -1);
+                            $("#share_div_img").attr('src',"__IMG__/join_share.png");
+                            $("#fav_img").attr('src',);
+                            $("#share_div").show();
+                            $("#share_div").bind("click", function () {
+                                $("#share_div").hide();
+                            });
+                        },3000);
+                    });
+                } else if(data == "0") {
+                    alert("您已经报名了，不能重复报名");
+                    return ;
+                } else if(data == "-2") {
+                    alert("参数不完整");
+                    return;
+                }
+            },
+            resetForm : true,
+        });
+        $("#signupok").ajaxSubmit(options);
+    }
+
+
+    $('.submit').click(function () {
+        var _info1_must = 1;
+        var _info2_must = 1;
+        var _info3_must = 1;
+        var _info4_must = 0;
+        var _info5_must = 0;
+        var _info6_must = 0;
+        var _info7_must = 0;
+        var _info8_must = 0;
+        var _info9_must = 0;
+        var _info0_must = 1;
+        if (!($("#file0").val() || $("#file1").val()||$("#file2").val()||$("#file3").val()||$("#file4").val())) {
+            alert("至少上传一张照片哦！");
+            return false;
+        }
+
+        if(_info1_must){
+            if (validate_required("name","姓名必须填写！") == false){
+                $("#name").focus();
+                return false;
+            }
+        }
+        if (_info2_must){
+            if (validate_required("wechat","微信必须填写！") == false){
+                $("#wechat").focus();
+                return false;
+            }
+        }
+        if (_info3_must){
+            if (validate_required("phone","电话必须填写！") == false){
+                $("#phone").focus();
+                return false;
+            }
+        }
+        if (_info4_must){
+            if (validate_required("schoolname","必须填写！") == false){
+                $("#schoolname").focus();
+                return false;
+            }
+        }
+        if (_info5_must){
+            if (validate_required("joinform","必须填写！") == false){
+                $("#joinform").focus();
+                return false;
+            }
+        }
+        if (_info6_must){
+            if (validate_required("info1","必须填写！") == false){
+                $("#info1").focus();
+                return false;
+            }
+        }
+        if (_info7_must){
+            if (validate_required("info2","必须填写！") == false){
+                $("#info2").focus();
+                return false;
+            }
+        }
+        if (_info8_must){
+            if (validate_required("info3","必须填写！") == false){
+                $("#info3").focus();
+                return false;
+            }
+        }
+        if (_info9_must){
+            if (validate_required("info4","必须填写！") == false){
+                $("#info4").focus();
+                return false;
+            }
+        }
+        if (_info0_must){
+            if (validate_required("declaration","参赛宣言必须填写！") == false){
+                $("#declaration").focus();
+                return false;
+            }
+        }
+        if(activityId == 25) {
+            $("#fav_img").css('display',"none");
+            var _fav_img_width_two = _width * 0.8 / 2;
+            $("#fav_img_two").css("width", _width * 0.8);
+            $("#fav_img_two").css("height", _width * 0.8);
+            $("#fav_img_two").css("margin-left", _fav_img_width_two * -1);
+            $("#fav_img_two").css("margin-top", _fav_img_width_two * -1);
+            $("#fav_img_two").attr('src',"/upload/activity/20180805113713.jpg");
+        }else {
+
+
+            if(wxContactImg  != undefined && wxContactImg != ''){
+                var _fav_img_width = _width * 0.4 / 2;
+                $("#fav_img").css("width", _width * 0.4);
+                $("#fav_img").css("height", _width * 0.4);
+                $("#fav_img").css("margin-left", _fav_img_width * -1);
+                $("#fav_img").css("margin-top", _fav_img_width * -1 + 10);
+                $("#fav_img").attr('src', wxContactImg);
+
+                var _fav_img_width_two = _width * 0.8 / 2;
+                $("#fav_img_two").css("width", _width * 0.8);
+                $("#fav_img_two").css("height", _width * 0.8);
+                $("#fav_img_two").css("margin-left", _fav_img_width_two * -1);
+                $("#fav_img_two").css("margin-top", _fav_img_width_two * -1);
+                $("#fav_img_two").attr('src',"/upload/activity/fav_img_background.jpg");
+            } else {
+                $("#fav_img").css('display',"none");
+                var _fav_img_width_two = _width * 0.8 / 2;
+                $("#fav_img_two").css("width", _width * 0.8);
+                $("#fav_img_two").css("height", _width * 0.8);
+                $("#fav_img_two").css("margin-left", _fav_img_width_two * -1);
+                $("#fav_img_two").css("margin-top", _fav_img_width_two * -1);
+                $("#fav_img_two").attr('src',"/upload/activity/fav_img_background_default.jpg");
+            }
+
+        }
+        $.ajax({
+            url:"/applyadd",
+            type:'POST',
+            data:$('#yourformid').serialize(),
+            dataType : 'json',
+            async:true,
+            timeout:0,
+            success : function (data,statusText) {
+                if(data.code == "1") {
+                    $("#fav_img_two").attr('src',data.pic);
+                    $("#fav_div").show();
+                    $("#fav_div").bind("click", function () {
+                        setTimeout(function () {
+                            $("#fav_div").hide();
+                            var _fav_img_width = _width  / 2;
+                            var _fav_img_height = _height / 2;
+                            $("#share_div_img").css("width", _width);
+                            $("#share_div_img").css("height", _height);
+                            $("#share_div_img").css("margin-left", _fav_img_width * -1);
+                            $("#share_div_img").css("margin-top", _fav_img_height * -1);
+                            $("#share_div_img").attr('src',"__IMG__/join_share.png");
+                            $("#share_div").show();
+                            $("#share_div").bind("click", function () {
+                                $("#share_div").hide();
+                            });
+                        },3000);
+                    });
+                    alert("报名成功")
+                    return false;
+                } else if(data.code == "0") {
+                    alert("您已经报名了，不能重复报名");
+                    return ;
+                } else if(data == "-2") {
+                    alert("参数不完整");
+                    return;
+                }
+            },
+            resetForm : true,
+        });
+    })
+
+    wx.config({
+        debug: false,
+        appId: '{$wx_config.appid}',
+        timestamp: '{$wx_config.timestamp}',
+        nonceStr: '{$wx_config.noncestr}',
+        signature: "{$wx_config.signature}",
+
+        jsApiList: [// 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+            'checkJsApi',
+            'onMenuShareAppMessage',
+            'onMenuShareTimeline'
+        ]
+    });
+
+
+    wx.ready(function() {
+        wx.onMenuShareAppMessage({
+            title: '{$act.title}', // 分享标题
+            desc: '{$act.desc}', // 分享描述
+            link: '{$wx_config.url}', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: '', // 分享图标
+            success: function () {
+                // 用户点击了分享后执行的回调函数
+            }
+        });
+
+        wx.onMenuShareTimeline({
+            title: '{$act.title}', // 分享标题
+            link: '{$wx_config.url}', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: '', // 分享图标
+            success: function () {
+                // 用户点击了分享后执行的回调函数
+            },
+        });
+    })
+
+
+
+</script>

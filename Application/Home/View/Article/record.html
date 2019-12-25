@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <title> 朗读文章</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/index/css/common.css">
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js "></script>
+    <script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+    <script>
+
+      //  var vConsole = new VConsole();
+
+    </script>
+</head>
+<style>
+    /* p { 
+        text-indent: 2em;
+    } */
+    body {
+        background: #f5f5f5;
+    }
+
+    .header {
+        background: url('__PUBLIC__/index/img/tiantianquan_bg.jpg') no-repeat center / auto;
+        height: 6rem;
+        text-align: center;
+        color: white;
+        line-height: 6rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin: -1.2rem -.5rem;
+    }
+
+    .article {
+        margin: 1rem .5rem .5rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: .5rem;
+        background: white;
+        border-radius: 3px;
+        min-height: 80vh;
+        padding: .5rem;
+
+    }
+
+    .source {
+        color: gray;
+    }
+
+    .div-para > p {
+        font-family: cursive;
+        text-indent: 2em;
+        display: none;
+    }
+
+    .content > .count {
+
+        color: gray;
+        text-align: center;
+    }
+
+    .content > .div-para {
+        flex: 1;
+
+    }
+
+    .count {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .left {
+        background: url('__PUBLIC__/index/img/left.svg') no-repeat center / cover;
+        width: 1rem;
+        height: 1rem;
+        margin: 0 auto;
+        visibility: hidden;
+    }
+
+    .right {
+        background: url('__PUBLIC__/index/img/right.svg') no-repeat center / cover;
+        width: 1rem;
+        height: 1rem;
+        margin: 0 auto;
+    }
+
+    .btn-area {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        height: 3rem;
+        color: gray;
+    }
+
+    .yuansheng {
+        background: url('__PUBLIC__/index/img/yuansheng.svg') no-repeat center / cover;
+        width: 1rem;
+        height: 1rem;
+        margin: 0 auto;
+    }
+
+    .start {
+        background: url('__PUBLIC__/index/img/start.svg') no-repeat center / cover;
+        width: 2rem;
+        height: 2rem;
+        margin: 0 auto;
+    }
+
+    .end {
+        background: url('__PUBLIC__/index/img/end.svg') no-repeat center / cover;
+        width: 2rem;
+        height: 2rem;
+        display: none;
+        margin: 0 auto;
+    }
+
+    .wode {
+        background: url('__PUBLIC__/index/img/wode.svg') no-repeat center / cover;
+        width: 1rem;
+        height: 1rem;
+        margin: 0 auto;
+    }
+
+    .div_wode {
+        /*visibility: hidden;*/
+    }
+</style>
+
+<body>
+<div class="article">
+    <div class="header">
+
+    </div>
+
+    <div class="content">
+        <div class="count">
+            <div class="left"></div>
+            <p>第<span class="count_num">1</span>段</p>
+            <div class="right"></div>
+        </div>
+        <div class="div-para">
+
+        </div>
+
+        <div class="btn-area">
+            <!--<div>-->
+                <!--<div class="yuansheng"></div>-->
+                <!--<p>原声</p>-->
+            <!--</div>-->
+            <div>
+                <div class="start"></div>
+                <div class="end"></div>
+            </div>
+            <!--<div class="div_wode">-->
+                <!--<div class="wode"></div>-->
+                <!--<p>我的</p>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/index/js/common.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script>
+    var id = getQueryString('id');
+
+    var maxnum = 0;
+    var voice_id = [];
+    $.ajax({
+        url: '/index.php/home/article/article_record',
+        type: 'POST',
+        data: {
+            id: id
+        },
+        success: function (data) {
+            $('.header').text(data.title);
+          //	$('.header').css("background","url( "+data.thumb+" )")
+            data.content.forEach(element => {
+                maxnum++;
+                $('.div-para').append('<p class="para">' + element + '</p>');
+            })
+            $('.para').eq(0).toggle();
+        }
+    })
+    var countnum = 1;
+    $.ajax({
+        type: 'post',
+        dataType: 'json',
+        url: '/index.php/home/article/sign?id=' + id,
+        success: function (res) {
+            wx.config({
+                debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                appId: res.appId, // 必填，公众号的唯一标识
+                timestamp: res.timestamp, // 必填，生成签名的时间戳
+                nonceStr: res.noncestr, // 必填，生成签名的随机串
+                signature: res.signature,// 必填，签名
+                jsApiList: ['startRecord', 'stopRecord', 'playVoice', 'uploadVoice', 'onVoicePlayEnd'] // 必填，需要使用的JS接口列表
+            });
+        }
+    });
+
+
+    $('.start').click(function () {
+        wx.startRecord();
+        $(this).toggle();
+        $('.end').toggle();
+        // $('.div_wode').css('visibility', 'hidden');
+
+    });
+
+    $('.right').click(function () {
+        if (countnum >= maxnum) {
+            return
+        }
+        countnum++;
+        $('.count_num').text(countnum);
+        $('.para').css('display', 'none');
+        $('.para').eq(countnum - 1).toggle();
+    })
+
+
+
+    $('.end').click(function () {
+        wx.stopRecord({
+            success: function (res) {
+                var localid = res.localId;
+                // $('.div_wode').css('visibility', 'visible');
+                // $('.div_wode').click(function () {
+                //     $('.div_wode').css('color', '#1296db');
+                //     wx.playVoice({
+                //         localId: localid
+                //     })
+                //
+                // });
+                wx.playVoice({
+                    localId: localid // 需要播放的音频的本地ID，由stopRecord接口获得
+                });
+
+                // console.log(localid);
+
+                wx.uploadVoice({
+                    localId: localid, // 需要上传的音频的本地ID，由stopRecord接口获得
+                    isShowProgressTips: 1, // 默认为1，显示进度提示
+                    success: function (res) {
+                        var serverId = res.serverId; // 返回音频的服务器端ID
+                        voice_id[countnum - 1] = serverId;
+                        if (voice_id.length >= maxnum) {
+                            let voice_id_string = voice_id.join(';');
+                            console.log(voice_id_string);
+                            $.ajax({
+                                url: '/index.php/home/article/article_upload',
+                                type: 'POST',
+                                dataType: "json",
+                                data: {
+                                    'voice_id': encodeURI(voice_id_string),
+                                    'user_id': 0,
+                                    'article_id': id,
+                                },
+                                success: function (res) {
+                                    window.location.href="index.html";
+                                    return false;
+                                }
+                            })
+                        }
+                    }
+                })
+            }
+        });
+        $(this).toggle();
+        $('.start').toggle();
+    });
+
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+[ 2019-04-05T12:00:24+08:00 ] 71.255.131.72 /index.php?s=/module/aciton/param1/${@phpinfo()}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载模块:Module
+
+[ 2019-04-05T12:00:24+08:00 ] 71.255.131.72 /index.php/module/aciton/param1/${@phpinfo()}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+ERR: 无法加载模块:Module
+
+[ 2019-04-05T12:00:24+08:00 ] 71.255.131.72 /index.php?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+ERR: 无法加载模块:Index
+
+[ 2019-04-05T20:53:36+08:00 ] 157.55.39.40 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-04-05T21:07:33+08:00 ] 207.46.13.142 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载模块:Robots
+

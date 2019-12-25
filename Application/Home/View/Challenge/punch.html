@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="__PUBLIC__/index/css/common.css" />
+    <link rel="stylesheet" href="__PUBLIC__/index/css/punch.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="__PUBLIC__/index/layer/layer.js"></script>
+    <script src="__PUBLIC__/index/js/common.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="addimg">
+            <span>
+                <input multiple type="file" id="picfile" class="file-input" accept="image/*" onchange="changepic(this)"></input>
+                <div id="addimg-icon" class="addimg-icon"></div>
+            </span>
+        </div>
+        <button class="complete" onclick="uploadImg()">上传完成图片</button>
+        <div class="popBox" id="popBox">
+            <div class="popBox-mask"></div>
+            <div class="popBox-content">
+                <div class="img"></div>
+                <div class="popBox-button">
+                    <button class="popBox-button-no" onclick="reUpload()">重新上传</button>
+                    <button class="popBox-button-yes" onclick="upload()">确定</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="__PUBLIC__/index/js/punch.js"></script>
+</body>
+
+</html>

